@@ -35,14 +35,26 @@
     --radius: 0.75rem;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(25 95% 60%) 0%, hsl(35 95% 55%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 18% 12%) 0%, hsl(220 18% 8%) 100%);
-    --gradient-hero: radial-gradient(ellipse at 50% 0%, hsl(25 95% 60% / 0.15) 0%, transparent 60%);
-    
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(25 95% 60%) 0%,
+      hsl(35 95% 55%) 100%
+    );
+    --gradient-card: linear-gradient(
+      145deg,
+      hsl(220 18% 12%) 0%,
+      hsl(220 18% 8%) 100%
+    );
+    --gradient-hero: radial-gradient(
+      ellipse at 50% 0%,
+      hsl(25 95% 60% / 0.15) 0%,
+      transparent 60%
+    );
+
     --shadow-glow: 0 0 60px -15px hsl(25 95% 60% / 0.3);
     --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.4);
     --shadow-card-hover: 0 8px 30px -4px hsl(0 0% 0% / 0.5);
-    
+
     --glass-bg: hsl(220 18% 10% / 0.7);
     --glass-border: hsl(220 15% 20% / 0.5);
   }
@@ -59,11 +71,16 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', system-ui, sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Space Grotesk", system-ui, sans-serif;
   }
 }
 

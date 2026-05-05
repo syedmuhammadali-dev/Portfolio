@@ -177,9 +177,9 @@ const Navbar = () => {
                       : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
                   }`}
                 >
-                {item.label}
+                  {item.label}
                 </motion.a>
-            ))}
+              ))}
               <motion.a
                 href="#contact"
                 onClick={() => {
@@ -194,7 +194,7 @@ const Navbar = () => {
                     : "btn-primary"
                 }`}
               >
-              Hire Me
+                Hire Me
               </motion.a>
             </div>
           </motion.div>
