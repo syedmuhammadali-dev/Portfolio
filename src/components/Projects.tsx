@@ -37,7 +37,7 @@ const mobileProjects = [
       "Axios",
       "AsyncStorage",
     ],
-    github: "https://github.com/Syed-Muhammad-Ali-git/Talkbridge-Mobile-App",
+    github: "https://github.com/syedmuhammadali-dev/Talkbridge-Mobile-App",
     live: "",
   },
 ];
@@ -86,7 +86,7 @@ const reactProjects = [
       "Map & Location",
       "3 Role Different pages and dashboards with security",
     ],
-    github: "https://github.com/Syed-Muhammad-Ali-git/Road-Helper",
+    github: "https://github.com/syedmuhammadali-dev/Road-Helper",
     live: "https://corestock-web.vercel.app/",
   },
   {
@@ -103,7 +103,7 @@ const reactProjects = [
       "AsyncStorage",
     ],
     github:
-      "https://github.com/Syed-Muhammad-Ali-git/Talkbridge-ChatApp-Frontend",
+      "https://github.com/syedmuhammadali-dev/Talkbridge-ChatApp-Frontend",
     live: "https://talkbridge-chatapp.vercel.app/",
   },
   {
@@ -148,7 +148,7 @@ const reactProjects = [
     title: "React Portfolio Website",
     description: "My 1st React Portfolio.",
     tech: ["React.js", "Typescript", "Tailwind Css"],
-    github: "https://github.com/Syed-Muhammad-Ali-git/old-react-portfolio",
+    github: "https://github.com/syedmuhammadali-dev/old-react-portfolio",
     live: "https://old-react-portfolio-puce.vercel.app/",
   },
   {
@@ -163,7 +163,7 @@ const reactProjects = [
       "Framer Motion",
       "FontAwesome Icons",
     ],
-    github: "https://github.com/Syed-Muhammad-Ali-git/ILMA-Hackathon-Event",
+    github: "https://github.com/syedmuhammadali-dev/ILMA-Hackathon-Event",
     live: "https://studentportal-silk.vercel.app/",
   },
   {
@@ -171,7 +171,7 @@ const reactProjects = [
     description:
       "A website UI for MyBindle platform with React components and responsive design.",
     tech: ["React.js", "JavaScript", "Tailwind CSS", "CSS3"],
-    github: "https://github.com/Syed-Muhammad-Ali-git/Mybindle-react",
+    github: "https://github.com/syedmuhammadali-dev/Mybindle-react",
     live: "https://my-bindle-website-react.vercel.app/",
   },
   {
@@ -179,7 +179,7 @@ const reactProjects = [
     description:
       "A text manipulation tool with features like uppercase, lowercase, trimming spaces, and copy.",
     tech: ["React.js", "Tailwind CSS"],
-    github: "https://github.com/Syed-Muhammad-Ali-git/Text-Changer-App",
+    github: "https://github.com/syedmuhammadali-dev/Text-Changer-App",
     live: "https://text-changer.surge.sh/",
   },
 ];
@@ -191,7 +191,7 @@ const webProjects = [
       "A social media application with local storage using HTML, CSS, and JavaScript.",
     tech: ["HTML5", "CSS3", "JavaScript", "Local Storage"],
     github:
-      "https://github.com/Syed-Muhammad-Ali-git/socialmedia-app-html-bootstrap",
+      "https://github.com/syedmuhammadali-dev/socialmedia-app-html-bootstrap",
     live: "https://socialmedia-app-ali.vercel.app/",
   },
   {
@@ -199,7 +199,7 @@ const webProjects = [
     description:
       "A classifieds marketplace UI with search/filter listings, category browsing, and listing details.",
     tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    github: "https://github.com/Syed-Muhammad-Ali-git/olx-clone",
+    github: "https://github.com/syedmuhammadali-dev/olx-clone",
     live: "http://olx-by-ali.surge.sh/",
   },
   {
@@ -208,7 +208,7 @@ const webProjects = [
       "A frontend clone of YouTube built using Tailwind CSS with responsive UI.",
     tech: ["HTML5", "Tailwind CSS"],
     github:
-      "https://github.com/Syed-Muhammad-Ali-git/Tailwind-Assignments/tree/master/youtube-clone",
+      "https://github.com/syedmuhammadali-dev/Tailwind-Assignments/tree/master/youtube-clone",
     live: "http://tailwind-assignment.surge.sh/youtube-clone/index.html",
   },
   {
@@ -216,7 +216,7 @@ const webProjects = [
     description:
       "A fun Pokémon app fetching data from Pokémon API and displaying it in a styled UI.",
     tech: ["Html", "Css", "Tailwind CSS", "Js"],
-    github: "https://github.com/Syed-Muhammad-Ali-git/Pokemon-App",
+    github: "https://github.com/syedmuhammadali-dev/Pokemon-App",
     live: "https://pokemon-clone-lake.vercel.app/",
   },
   {
@@ -224,7 +224,7 @@ const webProjects = [
     description:
       "Google homepage clone built using HTML and CSS with pixel-perfect layout.",
     tech: ["HTML5", "CSS3"],
-    github: "https://github.com/Syed-Muhammad-Ali-git/Google-Clone",
+    github: "https://github.com/syedmuhammadali-dev/Google-Clone",
     live: "http://tailwind-assignment.surge.sh/google-ui/index.html",
   },
   {
@@ -232,14 +232,14 @@ const webProjects = [
     description:
       "Creative CSS animations demonstrating transitions and keyframes.",
     tech: ["HTML5", "CSS3", "Bootstrap"],
-    github: "https://github.com/Syed-Muhammad-Ali-git/Animation-website",
+    github: "https://github.com/syedmuhammadali-dev/Animation-website",
     live: "https://animation-website.surge.sh/",
   },
   {
     title: "Nexcent Website",
     description: "A modern responsive landing page built using Tailwind CSS.",
     tech: ["Tailwind CSS", "HTML5"],
-    github: "https://github.com/Syed-Muhammad-Ali-git/Nexcent-Website",
+    github: "https://github.com/syedmuhammadali-dev/Nexcent-Website",
     live: "https://nexcentclone.surge.sh/",
   },
 ];
@@ -251,7 +251,7 @@ const webProjects = [
 //       "A social media application with local storage using HTML, CSS, and JavaScript.",
 //     tech: ["HTML5", "CSS3", "JavaScript", "Local Storage"],
 //     github:
-//       "https://github.com/Syed-Muhammad-Ali-git/socialmedia-app-html-bootstrap",
+//       "https://github.com/syedmuhammadali-dev/socialmedia-app-html-bootstrap",
 //     live: "https://socialmedia-app-ali.vercel.app/",
 //   },
 // ];

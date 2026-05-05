@@ -65,7 +65,7 @@ const Contact = () => {
           {/* Social Links & Resume */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
             <a
-              href="https://github.com/Syed-Muhammad-Ali-git"
+              href="https://github.com/syedmuhammadali-dev"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline flex items-center gap-2 w-full sm:w-auto justify-center"

@@ -75,7 +75,7 @@ const Hero = () => {
             className="flex flex-wrap items-center justify-center gap-3 sm:gap-5"
           >
             <a
-              href="https://github.com/Syed-Muhammad-Ali-git"
+              href="https://github.com/syedmuhammadali-dev"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 sm:p-3 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
