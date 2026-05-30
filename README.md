@@ -1,19 +1,54 @@
-# Project info
+# 🌐 Syed Muhammad Ali — Developer Portfolio
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+A modern, full-featured personal portfolio built with **React + TypeScript + Tailwind CSS**, showcasing my projects, skills, and experience as a MERN Stack Developer.
 
-Follow these steps:
+🔗 **Live Demo:** [ali-portfolio-nine.vercel.app](https://ali-portfolio-nine.vercel.app)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## ✨ Features
 
-# Step 3: Install the necessary dependencies.
-npm i
+- ⚡ Lightning-fast performance with **Vite** bundler
+- 🎨 Fully responsive UI with **Tailwind CSS** + **shadcn/ui**
+- 🌙 Clean, modern design with smooth animations
+- 📱 Mobile-first, works on all screen sizes
+- 🗂️ Projects, Skills, About, and Contact sections
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| React + TypeScript | Frontend framework |
+| Vite | Build tool |
+| Tailwind CSS | Styling |
+| shadcn/ui | UI Components |
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/syedmuhammadali-dev/Portfolio.git
+
+# 2. Navigate to the folder
+cd Portfolio
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the dev server
 npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 📬 Connect With Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/syed-muhammed-ali-18669b2a1/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=vercel)](https://ali-portfolio-nine.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-gray?style=for-the-badge&logo=github)](https://github.com/syedmuhammadali-dev)
