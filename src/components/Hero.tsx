@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, Facebook } from "lucide-react";
+import AchievementBanner from "./AchievementBanner";
 
 const Hero = () => {
   return (
     <section className="relative min-h-[100svh] flex items-center justify-center hero-glow pt-20 sm:pt-24">
       <div className="section-container py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto text-center">
+          <AchievementBanner />
           {/* Status Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

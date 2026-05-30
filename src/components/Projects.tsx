@@ -44,6 +44,51 @@ const mobileProjects = [
 
 const reactProjects = [
   {
+    title: "Barakah — ERP Platform",
+    description:
+      "Full-featured ERP system for businesses — modules for inventory, billing, HR, and analytics. A complete enterprise solution built for real-world use.",
+    tech: [
+      "Next.js",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Redux Toolkit",
+    ],
+    github: "",
+    live: "https://barakah-erp.vercel.app/",
+  },
+  {
+    title: "Helplytics — Helpdesk & Analytics",
+    description:
+      "A modern helpdesk platform with AI Center, leaderboard, real-time notifications, messaging, and explore features. Built with Next.js 16 and Framer Motion animations.",
+    tech: [
+      "Next.js 16",
+      "React 19",
+      "Redux Toolkit",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+    github: "https://github.com/syedmuhammadali-dev/Helplytics-Frontend",
+    live: "https://helplytics-frontend.vercel.app/",
+  },
+  {
+    title: "AI Clinic Management System",
+    description:
+      "Full-stack clinic platform with role-based dashboards (Admin, Doctor, Receptionist, Patient), appointment booking, prescription PDF generation, and AI-powered prescription explanations via Google Gemini.",
+    tech: [
+      "Next.js 16",
+      "Firebase",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Gemini AI",
+      "pdf-lib",
+    ],
+    github: "https://github.com/syedmuhammadali-dev/Clinic-Management-Web",
+    live: "https://clinic-management-hackathon.vercel.app/",
+  },
+  {
     title: "CoreStock Web App",
     description:
       "A Modern Full stack WebApp with multiple roles and mutiple users and My role is Senior Frontend Developer.",

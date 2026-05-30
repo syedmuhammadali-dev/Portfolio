@@ -16,6 +16,16 @@ type Certificate = {
 
 const certificates: Certificate[] = [
   {
+    title: "1st Position — Saylani Mass IT 2026",
+    issuer: "Saylani Mass IT Training",
+    date: "2026",
+    pdf: "/1st-position-saylani.pdf",
+    preview: "/certifications/Screenshot 2026-05-30 235506.png",
+    link: "/1st-position-saylani.pdf",
+    sourceLabel: "PDF",
+    primaryActionLabel: "Open Certificate",
+  },
+  {
     title: "Frontend Hackathon Certificate",
     issuer: "Saylani",
     date: "2025",
