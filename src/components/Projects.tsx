@@ -7,7 +7,7 @@ const mobileProjects = [
   {
     title: "RoadHelper Mobile App",
     description:
-      "A cross-platform mobile application built with React Native CLI, designed for multiple users with different roles. Features include real-time tracking, notifications, and user-friendly UI. Light and Dark Theme. Three languages supported. My role focused on building responsive screens, integrating APIs, and ensuring smooth mobile performance.",
+      "A cross-platform mobile application bUIlt with React Native CLI, designed for multiple users with different roles. Features include real-time tracking, notifications, and user-friendly UI. Light and Dark Theme. Three languages supported. My role focused on bUIlding responsive screens, integrating APIs, and ensuring smooth mobile performance.",
     tech: [
       "React Native CLI",
       "i18n",
@@ -26,7 +26,7 @@ const mobileProjects = [
   {
     title: "TalkBridge Chat App",
     description:
-      "TalkBridge Chat App is a cross-platform mobile application built with React Native CLI, designed for multiple users with different roles. Features include real-time messaging, push notifications, group chats, and user-friendly UI. Light and Dark Theme supported. My role focused on building responsive screens, integrating APIs, implementing real-time chat functionality, and ensuring smooth mobile performance.",
+      "TalkBridge Chat App is a cross-platform mobile application bUIlt with React Native CLI, designed for multiple users with different roles. Features include real-time messaging, push notifications, group chats, and user-friendly UI. Light and Dark Theme supported. My role focused on bUIlding responsive screens, integrating APIs, implementing real-time chat functionality, and ensuring smooth mobile performance.",
     tech: [
       "React Native CLI",
       "TypeScript",
@@ -46,7 +46,7 @@ const reactProjects = [
   {
     title: "Barakah — ERP Platform",
     description:
-      "Full-featured ERP system for businesses — modules for inventory, billing, HR, and analytics. A complete enterprise solution built for real-world use.",
+      "Enterprise Resource Planning (ERP) platform featuring inventory management, billing, HR operations, reporting, and business analytics for modern organizations.",
     tech: [
       "Next.js",
       "React",
@@ -61,7 +61,7 @@ const reactProjects = [
   {
     title: "Helplytics — Helpdesk & Analytics",
     description:
-      "A modern helpdesk platform with AI Center, leaderboard, real-time notifications, messaging, and explore features. Built with Next.js 16 and Framer Motion animations.",
+      "AI-powered helpdesk and analytics platform featuring ticket management, leaderboards, messaging, notifications, and intelligent customer support workflows.",
     tech: [
       "Next.js 16",
       "React 19",
@@ -76,7 +76,7 @@ const reactProjects = [
   {
     title: "AI Clinic Management System",
     description:
-      "Full-stack clinic platform with role-based dashboards (Admin, Doctor, Receptionist, Patient), appointment booking, prescription PDF generation, and AI-powered prescription explanations via Google Gemini.",
+      "Healthcare management platform featuring role-based dashboards, appointment scheduling, digital prescriptions, PDF generation, and AI-powered prescription explanations using Google Gemini.",
     tech: [
       "Next.js 16",
       "Firebase",
@@ -95,10 +95,10 @@ const reactProjects = [
     tech: [
       "Next.js",
       "TypeScript",
-      "Api Integration",
-      "Tailwind Css",
-      "Mantine.dev",
-      "Material ui",
+      "API Integration",
+      "Tailwind CSS",
+      "Mantine UI",
+      "Material UI",
       "Redux",
       "Vercel",
     ],
@@ -110,21 +110,21 @@ const reactProjects = [
     title: "AppMash Website",
     description:
       "Modern SaaS platform UI featuring responsive layouts, reusable components, and optimized user experience across devices.",
-    tech: ["Next.js", "TypeScript", "Tailwind Css", "Material ui"],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Material UI"],
     github: "",
     live: "https://app-mash.vercel.app/",
   },
   {
     title: "Road Helper Web App",
     description:
-      "A modern full-stack web application built with the MERN stack (MongoDB, Express.js, React.js, Node.js), designed for multiple users with different roles. Features include real-time updates, responsive UI, and interactive dashboards. Light and Dark Theme supported. Three languages supported. My role focused on frontend development, API integration, and ensuring smooth full-stack performance.",
+      "Multi-role roadside assistance platform featuring real-time tracking, multilingual support, location services, and responsive dashboards. Contributed to frontend development, API integration, and user experience optimization.",
     tech: [
       "Next.js",
       "TypeScript",
       "i18n",
-      "Tailwind Css",
-      "Mantine.dev",
-      "Material ui",
+      "Tailwind CSS",
+      "Mantine UI",
+      "Material UI",
       "Redux",
       "Firebase",
       "Vercel",
@@ -137,7 +137,7 @@ const reactProjects = [
   {
     title: "TalkBridge Chat Web",
     description:
-      "Real-time chat application built with React.js and TypeScript featuring one-to-one messaging, group chats, authentication, responsive UI, and seamless user experience.",
+      "Real-time chat application bUIlt with React.js and TypeScript featuring one-to-one messaging, group chats, authentication, responsive UI, and seamless user experience.",
     tech: [
       "React.js",
       "TypeScript",
@@ -145,7 +145,7 @@ const reactProjects = [
       "Tailwind",
       "MongoDB",
       "Axios",
-      "AsyncStorage",
+      "Socket.io",
     ],
     github:
       "https://github.com/syedmuhammadali-dev/Talkbridge-ChatApp-Frontend",
@@ -158,13 +158,13 @@ const reactProjects = [
     tech: [
       "Next.js",
       "TypeScript",
-      "Tailwind Css",
-      "Mantine.dev",
-      "Material ui",
+      "Tailwind CSS",
+      "Mantine UI",
+      "Material UI",
       "Vercel",
     ],
     github: "",
-    live: "https://core-stock-admin-ui.vercel.app/login",
+    live: "https://core-stock-admin-UI.vercel.app/login",
   },
   {
     title: "CoreStock Admin Panel",
@@ -173,9 +173,9 @@ const reactProjects = [
     tech: [
       "Next.js",
       "TypeScript",
-      "Tailwind Css",
-      "Mantine.dev",
-      "Material ui",
+      "Tailwind CSS",
+      "Mantine UI",
+      "Material UI",
       "Redux",
       "Vercel",
     ],
@@ -186,26 +186,26 @@ const reactProjects = [
     title: "T3ALL Restaurant Website",
     description:
       "A restaurant-style website UI with responsive layout and interactive elements.",
-    tech: ["React.js", "Tailwind Css", "JavaScript"],
+    tech: ["React.js", "Tailwind CSS", "JavaScript"],
     github: "",
-    live: "https://t3aldevaliui.netlify.app/",
+    live: "https://t3aldevaliUI.netlify.app/",
   },
   {
     title: "React Portfolio Website",
     description:
-      "Old Personal portfolio website showcasing frontend development projects, skills, and professional journey built with React and TypeScript.",
-    tech: ["React.js", "TypeScript", "Tailwind Css"],
+      "Old Personal portfolio website showcasing frontend development projects, skills, and professional journey bUIlt with React and TypeScript.",
+    tech: ["React.js", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/syedmuhammadali-dev/old-react-portfolio",
     live: "https://old-react-portfolio-puce.vercel.app/",
   },
   {
     title: "Student Portal",
     description:
-      "Student Portal - a hackathon project built with React.js and TypeScript to help students access courses and events. Features responsive UI, smooth animations with Framer Motion, and intuitive navigation.",
+      "Student Portal - a hackathon project bUIlt with React.js and TypeScript to help students access courses and events. Features responsive UI, smooth animations with Framer Motion, and intUItive navigation.",
     tech: [
       "React.js",
       "TypeScript",
-      "Tailwind Css",
+      "Tailwind CSS",
       "Material UI",
       "Framer Motion",
       "FontAwesome Icons",
@@ -216,7 +216,7 @@ const reactProjects = [
   {
     title: "MyBindle Website",
     description:
-      "Responsive business website built with React featuring modern UI components, optimized layouts, and user-friendly navigation.",
+      "Responsive business website bUIlt with React featuring modern UI components, optimized layouts, and user-friendly navigation.",
     tech: ["React.js", "JavaScript", "Tailwind CSS", "CSS3"],
     github: "https://github.com/syedmuhammadali-dev/Mybindle-react",
     live: "https://my-bindle-website-react.vercel.app/",
@@ -252,7 +252,7 @@ const webProjects = [
   {
     title: "YouTube Clone",
     description:
-      "A frontend clone of YouTube built using Tailwind CSS with responsive UI.",
+      "A frontend clone of YouTube bUIlt using Tailwind CSS with responsive UI.",
     tech: ["HTML5", "Tailwind CSS"],
     github:
       "https://github.com/syedmuhammadali-dev/Tailwind-Assignments/tree/master/youtube-clone",
@@ -269,10 +269,10 @@ const webProjects = [
   {
     title: "Google Clone",
     description:
-      "Google homepage clone built using HTML and CSS with pixel-perfect layout.",
+      "Google homepage clone bUIlt using HTML and CSS with pixel-perfect layout.",
     tech: ["HTML5", "CSS3"],
     github: "https://github.com/syedmuhammadali-dev/Google-Clone",
-    live: "http://tailwind-assignment.surge.sh/google-ui/index.html",
+    live: "http://tailwind-assignment.surge.sh/google-UI/index.html",
   },
   {
     title: "CSS Animation Showcase",
@@ -284,7 +284,7 @@ const webProjects = [
   },
   {
     title: "Nexcent Website",
-    description: "A modern responsive landing page built using Tailwind CSS.",
+    description: "A modern responsive landing page bUIlt using Tailwind CSS.",
     tech: ["Tailwind CSS", "HTML5"],
     github: "https://github.com/syedmuhammadali-dev/Nexcent-Website",
     live: "https://nexcentclone.surge.sh/",
