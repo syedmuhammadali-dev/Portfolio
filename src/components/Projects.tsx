@@ -38,7 +38,7 @@ const mobileProjects = [
       "AsyncStorage",
     ],
     github: "https://github.com/syedmuhammadali-dev/Talkbridge-Mobile-App",
-    live: "",
+    live: "https://drive.google.com/file/d/189Dx-YxP4rnHIWZGQVJw4uHjah1Ycr94/view?usp=sharing",
   },
 ];
 
@@ -55,7 +55,7 @@ const reactProjects = [
       "Tailwind CSS",
       "Redux Toolkit",
     ],
-    github: "",
+    github: "https://github.com/syedmuhammadali-dev/Barakah-ERP-Frontend",
     live: "https://barakah-erp.vercel.app/",
   },
   {
@@ -91,10 +91,10 @@ const reactProjects = [
   {
     title: "CoreStock Web App",
     description:
-      "A Modern Full stack WebApp with multiple roles and mutiple users and My role is Senior Frontend Developer.",
+      "Enterprise inventory and stock management platform with role-based access, site management, stock tracking, reporting, and real-time data handling. Contributed as Senior Frontend Developer.",
     tech: [
       "Next.js",
-      "Typescript",
+      "TypeScript",
       "Api Integration",
       "Tailwind Css",
       "Mantine.dev",
@@ -109,7 +109,7 @@ const reactProjects = [
   {
     title: "AppMash Website",
     description:
-      "A Modern web application UI built for the AppMash platform with responsive design.",
+      "Modern SaaS platform UI featuring responsive layouts, reusable components, and optimized user experience across devices.",
     tech: ["Next.js", "TypeScript", "Tailwind Css", "Material ui"],
     github: "",
     live: "https://app-mash.vercel.app/",
@@ -120,7 +120,7 @@ const reactProjects = [
       "A modern full-stack web application built with the MERN stack (MongoDB, Express.js, React.js, Node.js), designed for multiple users with different roles. Features include real-time updates, responsive UI, and interactive dashboards. Light and Dark Theme supported. Three languages supported. My role focused on frontend development, API integration, and ensuring smooth full-stack performance.",
     tech: [
       "Next.js",
-      "Typescript",
+      "TypeScript",
       "i18n",
       "Tailwind Css",
       "Mantine.dev",
@@ -132,12 +132,12 @@ const reactProjects = [
       "3 Role Different pages and dashboards with security",
     ],
     github: "https://github.com/syedmuhammadali-dev/Road-Helper",
-    live: "https://corestock-web.vercel.app/",
+    live: "https://roadhelper.vercel.app/",
   },
   {
     title: "TalkBridge Chat Web",
     description:
-      "TalkBridge Chat App is a cross-platform mobile application built with React Native CLI, designed for multiple users with different roles. Features include real-time messaging, push notifications, group chats, and user-friendly UI. Light and Dark Theme supported. My role focused on building responsive screens, integrating APIs, implementing real-time chat functionality, and ensuring smooth mobile performance.",
+      "Real-time chat application built with React.js and TypeScript featuring one-to-one messaging, group chats, authentication, responsive UI, and seamless user experience.",
     tech: [
       "React.js",
       "TypeScript",
@@ -153,10 +153,11 @@ const reactProjects = [
   },
   {
     title: "CoreStock Admin Panel UI",
-    description: "A Modern web application UI .",
+    description:
+      "Modern and responsive admin dashboard UI designed for inventory and warehouse management systems using Next.js and modern frontend technologies.",
     tech: [
       "Next.js",
-      "Typescript",
+      "TypeScript",
       "Tailwind Css",
       "Mantine.dev",
       "Material ui",
@@ -168,10 +169,10 @@ const reactProjects = [
   {
     title: "CoreStock Admin Panel",
     description:
-      "A Modern Full stack Admin Panel in this website My role is Senior Frontend Developer.",
+      "Comprehensive admin panel for inventory and warehouse management with role-based permissions, reporting dashboards, stock monitoring, and advanced management features. Worked as Senior Frontend Developer.",
     tech: [
       "Next.js",
-      "Typescript",
+      "TypeScript",
       "Tailwind Css",
       "Mantine.dev",
       "Material ui",
@@ -191,8 +192,9 @@ const reactProjects = [
   },
   {
     title: "React Portfolio Website",
-    description: "My 1st React Portfolio.",
-    tech: ["React.js", "Typescript", "Tailwind Css"],
+    description:
+      "Old Personal portfolio website showcasing frontend development projects, skills, and professional journey built with React and TypeScript.",
+    tech: ["React.js", "TypeScript", "Tailwind Css"],
     github: "https://github.com/syedmuhammadali-dev/old-react-portfolio",
     live: "https://old-react-portfolio-puce.vercel.app/",
   },
@@ -202,7 +204,7 @@ const reactProjects = [
       "Student Portal - a hackathon project built with React.js and TypeScript to help students access courses and events. Features responsive UI, smooth animations with Framer Motion, and intuitive navigation.",
     tech: [
       "React.js",
-      "Typescript",
+      "TypeScript",
       "Tailwind Css",
       "Material UI",
       "Framer Motion",
@@ -214,7 +216,7 @@ const reactProjects = [
   {
     title: "MyBindle Website",
     description:
-      "A website UI for MyBindle platform with React components and responsive design.",
+      "Responsive business website built with React featuring modern UI components, optimized layouts, and user-friendly navigation.",
     tech: ["React.js", "JavaScript", "Tailwind CSS", "CSS3"],
     github: "https://github.com/syedmuhammadali-dev/Mybindle-react",
     live: "https://my-bindle-website-react.vercel.app/",
@@ -260,7 +262,7 @@ const webProjects = [
     title: "Pokémon App",
     description:
       "A fun Pokémon app fetching data from Pokémon API and displaying it in a styled UI.",
-    tech: ["Html", "Css", "Tailwind CSS", "Js"],
+    tech: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
     github: "https://github.com/syedmuhammadali-dev/Pokemon-App",
     live: "https://pokemon-clone-lake.vercel.app/",
   },
