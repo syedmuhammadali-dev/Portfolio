@@ -4,13 +4,13 @@ export default function AchievementBanner() {
   return (
     <div className="w-full bg-gradient-to-r from-yellow-500/10 via-amber-500/10 to-yellow-500/10 border border-yellow-500/30 rounded-2xl p-4 md:p-6 mb-6 md:mb-8">
       {/* Top Badge */}
-      <div className="flex items-center justify-center gap-2 mb-3">
+      {/* <div className="flex items-center justify-center gap-2 mb-3">
         <Trophy className="text-yellow-400 w-5 h-5 md:w-6 md:h-6" />
         <span className="text-yellow-400 font-bold text-sm md:text-base tracking-wider uppercase">
           Achievement Unlocked
         </span>
         <Trophy className="text-yellow-400 w-5 h-5 md:w-6 md:h-6" />
-      </div>
+      </div> */}
 
       {/* Main Title */}
       <h2 className="text-center text-white font-bold text-lg md:text-2xl lg:text-3xl mb-2">

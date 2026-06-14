@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Award, ExternalLink, FileText } from "lucide-react";
+import { Award, ExternalLink, FileText, Star } from "lucide-react";
 
 type Certificate = {
   title: string;
@@ -12,6 +12,7 @@ type Certificate = {
   link: string;
   sourceLabel?: string;
   primaryActionLabel?: string;
+  highlighted?: boolean;
 };
 
 const certificates: Certificate[] = [
@@ -19,9 +20,43 @@ const certificates: Certificate[] = [
     title: "1st Position — Saylani Mass IT 2026",
     issuer: "Saylani Mass IT Training",
     date: "2026",
+    highlighted: true,
     pdf: "/1st-position-saylani.pdf",
     preview: "/certifications/Screenshot 2026-05-30 235506.png",
     link: "/1st-position-saylani.pdf",
+    sourceLabel: "PDF",
+    primaryActionLabel: "Open Certificate",
+  },
+  {
+    title: "Farooq-e-Azam Institute Web Development",
+    issuer: "Farooq-e-Azam Institute",
+    date: "2025",
+    highlighted: true,
+    pdf: "/certifications/Farooqe-Azam-institute-webDevelopment.pdf",
+    preview: "/certifications/Screenshot 2026-04-10 171553.png",
+    link: "/certifications/Farooqe-Azam-institute-webDevelopment.pdf",
+    sourceLabel: "PDF",
+    primaryActionLabel: "Open Certificate",
+  },
+  {
+    title: "InfoChannel CIT Course",
+    issuer: "InfoChannel",
+    date: "2025",
+    highlighted: true,
+    pdf: "/certifications/InfoChannel-CIT-course.pdf",
+    preview: "/certifications/Screenshot 2026-04-10 171657.png",
+    link: "/certifications/InfoChannel-CIT-course.pdf",
+    sourceLabel: "PDF",
+    primaryActionLabel: "Open Certificate",
+  },
+  {
+    title: "Fixit WordPress Certificate",
+    issuer: "Fixit",
+    date: "2025",
+    highlighted: true,
+    pdf: "/certifications/fixit-wordpress-certificate.pdf",
+    preview: "/certifications/Screenshot 2026-04-10 171616.png",
+    link: "/certifications/fixit-wordpress-certificate.pdf",
     sourceLabel: "PDF",
     primaryActionLabel: "Open Certificate",
   },
@@ -45,36 +80,7 @@ const certificates: Certificate[] = [
     sourceLabel: "PDF",
     primaryActionLabel: "Open Certificate",
   },
-  {
-    title: "Fixit WordPress Certificate",
-    issuer: "Fixit",
-    date: "2025",
-    pdf: "/certifications/fixit-wordpress-certificate.pdf",
-    preview: "/certifications/Screenshot 2026-04-10 171616.png",
-    link: "/certifications/fixit-wordpress-certificate.pdf",
-    sourceLabel: "PDF",
-    primaryActionLabel: "Open Certificate",
-  },
-  {
-    title: "Farooq-e-Azam Institute Web Development",
-    issuer: "Farooq-e-Azam Institute",
-    date: "2025",
-    pdf: "/certifications/Farooqe-Azam-institute-webDevelopment.pdf",
-    preview: "/certifications/Screenshot 2026-04-10 171553.png",
-    link: "/certifications/Farooqe-Azam-institute-webDevelopment.pdf",
-    sourceLabel: "PDF",
-    primaryActionLabel: "Open Certificate",
-  },
-  {
-    title: "InfoChannel CIT Course",
-    issuer: "InfoChannel",
-    date: "2025",
-    pdf: "/certifications/InfoChannel-CIT-course.pdf",
-    preview: "/certifications/Screenshot 2026-04-10 171657.png",
-    link: "/certifications/InfoChannel-CIT-course.pdf",
-    sourceLabel: "PDF",
-    primaryActionLabel: "Open Certificate",
-  },
+
   {
     title: "Introduction to Modern AI",
     issuer: "Cisco",
@@ -171,7 +177,7 @@ const Certificates = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.12 }}
-              className="project-card overflow-hidden h-full"
+              className={`project-card overflow-hidden h-full ${certificate.highlighted ? "ring-2 ring-yellow-500/60" : ""}`}
             >
               <div className="flex h-full flex-col">
                 <a
@@ -180,6 +186,12 @@ const Certificates = () => {
                   rel="noopener noreferrer"
                   className="relative block h-[150px] sm:h-[170px] bg-secondary/60 border-b border-border overflow-hidden p-3"
                 >
+                  {certificate.highlighted && (
+                    <div className="absolute top-3 right-3 z-10 flex items-center gap-1.5 rounded-full bg-yellow-500 px-2.5 py-1 text-xs font-bold text-yellow-950 shadow-[0_0_14px_-2px] shadow-yellow-500/70">
+                      <Star size={12} className="fill-yellow-950" />
+                      Rare Achievement
+                    </div>
+                  )}
                   <img
                     src={encodeURI(certificate.preview)}
                     alt={`${certificate.title} badge preview`}

@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { ExternalLink, Github, Folder, Star } from "lucide-react";
 
 const mobileProjects = [
   {
     title: "RoadHelper Mobile App",
+    featured: true,
     description:
       "A cross-platform mobile application bUIlt with React Native CLI, designed for multiple users with different roles. Features include real-time tracking, notifications, and user-friendly UI. Light and Dark Theme. Three languages supported. My role focused on bUIlding responsive screens, integrating APIs, and ensuring smooth mobile performance.",
     tech: [
@@ -45,6 +46,7 @@ const mobileProjects = [
 const reactProjects = [
   {
     title: "Barakah — ERP Platform",
+    featured: true,
     description:
       "Enterprise Resource Planning (ERP) platform featuring inventory management, billing, HR operations, reporting, and business analytics for modern organizations.",
     tech: [
@@ -60,6 +62,7 @@ const reactProjects = [
   },
   {
     title: "Helplytics — Helpdesk & Analytics",
+    featured: true,
     description:
       "AI-powered helpdesk and analytics platform featuring ticket management, leaderboards, messaging, notifications, and intelligent customer support workflows.",
     tech: [
@@ -75,6 +78,7 @@ const reactProjects = [
   },
   {
     title: "AI Clinic Management System",
+    featured: true,
     description:
       "Healthcare management platform featuring role-based dashboards, appointment scheduling, digital prescriptions, PDF generation, and AI-powered prescription explanations using Google Gemini.",
     tech: [
@@ -90,6 +94,7 @@ const reactProjects = [
   },
   {
     title: "CoreStock Web App",
+    featured: true,
     description:
       "Enterprise inventory and stock management platform with role-based access, site management, stock tracking, reporting, and real-time data handling. Contributed as Senior Frontend Developer.",
     tech: [
@@ -105,17 +110,42 @@ const reactProjects = [
     github: "",
     live: "https://corestock-web.vercel.app/",
   },
-
   {
-    title: "AppMash Website",
+    title: "CoreStock Admin Panel UI",
+    featured: true,
     description:
-      "Modern SaaS platform UI featuring responsive layouts, reusable components, and optimized user experience across devices.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Material UI"],
+      "Modern and responsive admin dashboard UI designed for inventory and warehouse management systems using Next.js and modern frontend technologies.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Mantine UI",
+      "Material UI",
+      "Vercel",
+    ],
     github: "",
-    live: "https://app-mash.vercel.app/",
+    live: "https://core-stock-admin-UI.vercel.app/login",
+  },
+  {
+    title: "CoreStock Admin Panel",
+    featured: true,
+    description:
+      "Comprehensive admin panel for inventory and warehouse management with role-based permissions, reporting dashboards, stock monitoring, and advanced management features. Worked as Senior Frontend Developer.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Mantine UI",
+      "Material UI",
+      "Redux",
+      "Vercel",
+    ],
+    github: "",
+    live: "https://corestock-admin-panel.vercel.app/",
   },
   {
     title: "Road Helper Web App",
+    featured: true,
     description:
       "Multi-role roadside assistance platform featuring real-time tracking, multilingual support, location services, and responsive dashboards. Contributed to frontend development, API integration, and user experience optimization.",
     tech: [
@@ -135,6 +165,14 @@ const reactProjects = [
     live: "https://roadhelper.vercel.app/",
   },
   {
+    title: "AppMash Website",
+    description:
+      "Modern SaaS platform UI featuring responsive layouts, reusable components, and optimized user experience across devices.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Material UI"],
+    github: "",
+    live: "https://app-mash.vercel.app/",
+  },
+  {
     title: "TalkBridge Chat Web",
     description:
       "Real-time chat application bUIlt with React.js and TypeScript featuring one-to-one messaging, group chats, authentication, responsive UI, and seamless user experience.",
@@ -150,37 +188,6 @@ const reactProjects = [
     github:
       "https://github.com/syedmuhammadali-dev/Talkbridge-ChatApp-Frontend",
     live: "https://talkbridge-chatapp.vercel.app/",
-  },
-  {
-    title: "CoreStock Admin Panel UI",
-    description:
-      "Modern and responsive admin dashboard UI designed for inventory and warehouse management systems using Next.js and modern frontend technologies.",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Mantine UI",
-      "Material UI",
-      "Vercel",
-    ],
-    github: "",
-    live: "https://core-stock-admin-UI.vercel.app/login",
-  },
-  {
-    title: "CoreStock Admin Panel",
-    description:
-      "Comprehensive admin panel for inventory and warehouse management with role-based permissions, reporting dashboards, stock monitoring, and advanced management features. Worked as Senior Frontend Developer.",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Mantine UI",
-      "Material UI",
-      "Redux",
-      "Vercel",
-    ],
-    github: "",
-    live: "https://corestock-admin-panel.vercel.app/",
   },
   {
     title: "T3ALL Restaurant Website",
@@ -310,6 +317,7 @@ interface ProjectCardProps {
     tech: string[];
     github: string;
     live: string;
+    featured?: boolean;
   };
   index: number;
   isInView: boolean;
@@ -320,13 +328,22 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => (
     initial={{ opacity: 0, y: 40 }}
     animate={isInView ? { opacity: 1, y: 0 } : {}}
     transition={{ duration: 0.6, delay: index * 0.1 }}
-    className="project-card group"
+        className={`project-card group ${project.featured ? "shadow-[0_0_20px_-4px] shadow-primary/30" : ""}`}
   >
-    {/* Project Header */}
+    {/* Project Header */
+}
     <div className="p-6 border-b border-border">
       <div className="flex items-start justify-between mb-4">
-        <div className="p-2 rounded-lg bg-primary/10 text-primary">
-          <Folder size={24} />
+        <div className="flex items-center gap-3">
+          <div className="p-2 rounded-lg bg-primary/10 text-primary">
+            <Folder size={24} />
+          </div>
+            {project.featured && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-primary/15 text-primary text-xs font-semibold px-2.5 py-1 shadow-[0_0_12px_-2px] shadow-primary/50">
+                <Star size={12} className="fill-primary" />
+                Featured
+              </span>
+            )}
         </div>
         <div className="flex gap-3">
           {project.github && (
