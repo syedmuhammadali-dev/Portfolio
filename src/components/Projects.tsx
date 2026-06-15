@@ -25,22 +25,42 @@ const mobileProjects = [
     live: "https://drive.google.com/file/d/1ZZRi4NXkPHbKqQ415U3YHMci333VeeXP/view",
   },
   {
-    title: "TalkBridge Chat App",
+    title: "SafeCircle PK — Family Safety App",
+    featured: true,
     description:
-      "Real-time cross-platform chat application built with React Native CLI featuring one-to-one messaging, group chats, push notifications, light/dark themes, and smooth mobile performance. Implemented real-time communication with MongoDB backend.",
+      "Family GPS location sharing and safety app with real-time location tracking, geofenced safe zones, SOS emergency alerts, and privacy controls. Features multi-language support (English/Roman Urdu), background location sharing, and Firebase Cloud Messaging notifications.",
     tech: [
       "React Native CLI",
       "TypeScript",
-      "React Navigation",
-      "Redux / Redux Toolkit",
-      "Tailwind RN",
-      "MongoDB",
-      "Axios",
+      "Firebase Auth",
+      "Firebase Firestore",
+      "Google Maps",
+      "Zustand",
+      "Background Geolocation",
       "Push Notifications",
-      "AsyncStorage",
+      "react-native-reanimated",
+      "i18n (EN/UR)",
     ],
-    github: "https://github.com/syedmuhammadali-dev/Talkbridge-Mobile-App",
-    live: "https://drive.google.com/file/d/189Dx-YxP4rnHIWZGQVJw4uHjah1Ycr94/view?usp=sharing",
+    github: "",
+    live: "",
+  },
+  {
+    title: "PatternIntel — AI Health Analyzer",
+    featured: true,
+    description:
+      "AI-powered health pattern detection app that logs causes (food, stress, sleep) and symptoms, then uses OpenAI GPT-4o-mini to identify recurring correlations and generate insights. Features timeline view, confidence scoring, and sample data generation for demo.",
+    tech: [
+      "React Native CLI",
+      "TypeScript",
+      "OpenAI GPT-4o-mini",
+      "AsyncStorage",
+      "React Navigation",
+      "react-native-vector-icons",
+      "AI Pattern Recognition",
+      "Local-First Architecture",
+    ],
+    github: "",
+    live: "",
   },
 ];
 
@@ -94,10 +114,27 @@ const reactProjects = [
     live: "https://clinic-management-hackathon.vercel.app/",
   },
   {
-    title: "CoreStock Web App",
+    title: "CoreStock — Admin Panel",
     featured: true,
     description:
-      "Enterprise inventory and stock management platform with role-based access, site management, stock tracking, reporting, and real-time data handling. Contributed as Senior Frontend Developer.",
+      "Enterprise admin dashboard for inventory and warehouse management with role-based permissions, reporting dashboards, stock monitoring, and advanced management features. Built with Next.js, TypeScript, and multiple UI libraries.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Mantine UI",
+      "Material UI",
+      "Redux",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+    github: "",
+    live: "https://corestock-admin-panel.vercel.app/",
+  },
+  {
+    title: "CoreStock — User Panel",
+    featured: true,
+    description:
+      "User-facing inventory and stock management platform with site management, stock tracking, reporting, and real-time data handling. Built for end-users with intuitive UI and responsive design.",
     tech: [
       "Next.js",
       "TypeScript",
@@ -110,22 +147,6 @@ const reactProjects = [
     ],
     github: "",
     live: "https://corestock-web.vercel.app/",
-  },
-  {
-    title: "CoreStock Admin Panel UI",
-    featured: true,
-    description:
-      "Modern and responsive admin dashboard UI designed for inventory and warehouse management systems using Next.js and modern frontend technologies.",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Mantine UI",
-      "Material UI",
-      "Vercel",
-    ],
-    github: "",
-    live: "https://core-stock-admin-UI.vercel.app/login",
   },
 
   {
@@ -156,23 +177,6 @@ const reactProjects = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Material UI"],
     github: "",
     live: "https://app-mash.vercel.app/",
-  },
-  {
-    title: "TalkBridge Chat Web",
-    description:
-      "Real-time chat application built with React.js and TypeScript featuring one-to-one messaging, group chats, authentication, responsive UI, and seamless user experience.",
-    tech: [
-      "React.js",
-      "TypeScript",
-      "Redux / Redux Toolkit",
-      "Tailwind",
-      "MongoDB",
-      "Axios",
-      "Socket.io",
-    ],
-    github:
-      "https://github.com/syedmuhammadali-dev/Talkbridge-ChatApp-Frontend",
-    live: "https://talkbridge-chatapp.vercel.app/",
   },
   {
     title: "T3ALL Restaurant Website",
@@ -369,6 +373,24 @@ const Projects = () => {
             ))}
           </div>
         </div>
+
+        {/* GitHub Link */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-center"
+        >
+          <a
+            href="https://github.com/syedmuhammadali-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-outline inline-flex items-center gap-2"
+          >
+            <Github size={18} />
+            View All Projects on GitHub
+          </a>
+        </motion.div>
       </div>
     </section>
   );
