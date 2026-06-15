@@ -27,7 +27,7 @@ const About = () => {
           <img
             src="/Ali-img.jpeg"
             alt="Syed Muhammad Ali"
-            className="w-48 h-48 rounded-full mx-auto border-4 border-primary object-cover shadow-[0_0_30px_-5px] shadow-primary/30"
+            className="w-36 h-36 sm:w-48 sm:h-48 rounded-full mx-auto border-4 border-primary object-cover shadow-[0_0_30px_-5px] shadow-primary/30"
           />
         </motion.div>
 
