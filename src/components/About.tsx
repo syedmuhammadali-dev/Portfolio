@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { Code2, Briefcase, MapPin, GraduationCap } from "lucide-react";
 
 const stats = [
-  { icon: Code2, label: "Projects Built", value: "20+" },
+  { icon: Code2, label: "Real Projects Built", value: "20+" },
   { icon: Briefcase, label: "Experience", value: "9+ Months" },
   { icon: GraduationCap, label: "Certifications", value: "12+" },
   { icon: MapPin, label: "Location", value: "Karachi, PK" },
@@ -48,7 +48,10 @@ const About = () => {
             Store featuring real-time order management, push notifications, and
             multilingual support. Proficient in MERN & PERN stacks, React
             Native, and Expo, I specialize in delivering end-to-end solutions
-            from concept to deployment.
+            from concept to deployment. I also leverage AI-powered development
+            tools to accelerate workflows and solve complex problems — backed by
+            2+ years of strong manual coding fundamentals in JavaScript,
+            TypeScript, React / Next, and Node.js.
           </p>
 
           {/* Stats Row */}

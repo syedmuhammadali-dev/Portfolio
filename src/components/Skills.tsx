@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Palette, Wrench } from "lucide-react";
+import { Code2, Palette, Wrench, Sparkles } from "lucide-react";
 
 const skillCategories = [
   {
@@ -55,6 +55,24 @@ const skillCategories = [
       "Google Play Console",
       "React Native Maps",
       "Push Notifications",
+    ],
+  },
+  {
+    title: "AI & Productivity",
+    icon: Sparkles,
+    skills: [
+      "Cursor (AI IDE)",
+      "GitHub Copilot",
+      "Claude (Codex/Web)",
+      "ChatGPT",
+      "Google Gemini",
+      "DeepSeek",
+      "Blackbox AI",
+      "Grok",
+      "Lovable.dev",
+      "Replit AI",
+      "Gamma",
+      "Windsurf",
     ],
   },
   {

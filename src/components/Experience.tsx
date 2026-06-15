@@ -16,6 +16,7 @@ import {
   MessageSquare,
   Building2,
   Database,
+  Sparkles,
 } from "lucide-react";
 
 const titleVariants = {
@@ -83,6 +84,10 @@ const experiences = [
       {
         icon: Database,
         text: "Managed databases — MongoDB with Mongoose, PostgreSQL with pgAdmin, Firebase Firestore for real-time sync and offline support",
+      },
+      {
+        icon: Sparkles,
+        text: "Leveraged AI-powered development tools (Cursor, GitHub Copilot, Claude, ChatGPT, Gemini) as productivity multipliers to accelerate development, debug complex issues, and generate optimized code — building on 2+ years of strong manual coding fundamentals in JavaScript, TypeScript, React, and Node.js",
       },
       {
         icon: MapPin,
