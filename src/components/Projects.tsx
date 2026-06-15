@@ -5,21 +5,21 @@ import { ExternalLink, Github, Folder, Star } from "lucide-react";
 
 const mobileProjects = [
   {
-    title: "RoadHelper Mobile App",
+    title: "RoadHelper — Multi-Role App Suite",
     featured: true,
     description:
-      "A cross-platform mobile application built with React Native CLI, designed for multiple users with different roles. Features include real-time tracking, notifications, and user-friendly UI. Light and Dark Theme. Three languages supported. My role focused on bUIlding responsive screens, integrating APIs, and ensuring smooth mobile performance.",
+      "Three published React Native apps on Google Play Store: Customer App (food/grocery/ride booking with real-time tracking), Restaurant Partner App (order/menu management with Kanban boards), and Driver App (delivery/ride fulfillment with navigation). Features real-time sync, push notifications, and phone auth.",
     tech: [
       "React Native CLI",
-      "i18n",
       "TypeScript",
+      "Firebase Firestore",
+      "Push Notifications",
       "React Navigation",
-      "Redux / Redux Toolkit",
-      "Tailwind RN",
-      "Firebase",
-      "Axios",
+      "Redux Toolkit",
+      "i18n (EN/HE/AR)",
       "React Native Maps",
-      "AsyncStorage",
+      "Phone Auth",
+      "Google Play Console",
     ],
     github: "",
     live: "https://drive.google.com/file/d/1ZZRi4NXkPHbKqQ415U3YHMci333VeeXP/view",
@@ -27,7 +27,7 @@ const mobileProjects = [
   {
     title: "TalkBridge Chat App",
     description:
-      "TalkBridge Chat App is a cross-platform mobile application built with React Native CLI, designed for multiple users with different roles. Features include real-time messaging, push notifications, group chats, and user-friendly UI. Light and Dark Theme supported. My role focused on bUIlding responsive screens, integrating APIs, implementing real-time chat functionality, and ensuring smooth mobile performance.",
+      "Real-time cross-platform chat application built with React Native CLI featuring one-to-one messaging, group chats, push notifications, light/dark themes, and smooth mobile performance. Implemented real-time communication with MongoDB backend.",
     tech: [
       "React Native CLI",
       "TypeScript",
@@ -36,6 +36,7 @@ const mobileProjects = [
       "Tailwind RN",
       "MongoDB",
       "Axios",
+      "Push Notifications",
       "AsyncStorage",
     ],
     github: "https://github.com/syedmuhammadali-dev/Talkbridge-Mobile-App",
@@ -328,22 +329,21 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => (
     initial={{ opacity: 0, y: 40 }}
     animate={isInView ? { opacity: 1, y: 0 } : {}}
     transition={{ duration: 0.6, delay: index * 0.1 }}
-        className={`project-card group ${project.featured ? "shadow-[0_0_20px_-4px] shadow-primary/30" : ""}`}
+    className={`project-card group ${project.featured ? "shadow-[0_0_20px_-4px] shadow-primary/30" : ""}`}
   >
-    {/* Project Header */
-}
+    {/* Project Header */}
     <div className="p-6 border-b border-border">
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
           <div className="p-2 rounded-lg bg-primary/10 text-primary">
             <Folder size={24} />
           </div>
-            {project.featured && (
-              <span className="inline-flex items-center gap-1 rounded-full bg-primary/15 text-primary text-xs font-semibold px-2.5 py-1 shadow-[0_0_12px_-2px] shadow-primary/50">
-                <Star size={12} className="fill-primary" />
-                Featured
-              </span>
-            )}
+          {project.featured && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-primary/15 text-primary text-xs font-semibold px-2.5 py-1 shadow-[0_0_12px_-2px] shadow-primary/50">
+              <Star size={12} className="fill-primary" />
+              Featured
+            </span>
+          )}
         </div>
         <div className="flex gap-3">
           {project.github && (

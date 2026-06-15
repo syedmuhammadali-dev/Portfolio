@@ -176,7 +176,7 @@ const Contact = () => {
                   href="https://github.com/syedmuhammadali-dev"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all text-sm text-muted-foreground hover:text-primary-foreground"
+                  className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all text-sm text-muted-foreground"
                 >
                   <Github size={16} /> GitHub
                 </a>
@@ -184,7 +184,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/syed-muhammed-ali/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all text-sm text-muted-foreground hover:text-primary-foreground"
+                  className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all text-sm text-muted-foreground"
                 >
                   <Linkedin size={16} /> LinkedIn
                 </a>
@@ -192,7 +192,7 @@ const Contact = () => {
                   href="https://web.facebook.com/ali.mazhar.272106"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all text-sm text-muted-foreground hover:text-primary-foreground"
+                  className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all text-sm text-muted-foreground"
                 >
                   <Facebook size={16} /> Facebook
                 </a>
@@ -200,7 +200,7 @@ const Contact = () => {
                   href="https://wa.me/923190586822"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-green-600 hover:text-white transition-all text-sm text-muted-foreground hover:text-white"
+                  className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-green-600 hover:text-white transition-all text-sm text-muted-foreground"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -29,8 +29,11 @@ const Hero = () => {
             className="font-display text-[clamp(1.9rem,8vw,4.6rem)] font-bold leading-[1.1] mb-5 sm:mb-6"
           >
             Hello, I'm <span className="text-gradient">Syed Muhammad Ali</span>
-            <span className="block mt-2 text-[clamp(1.05rem,4.4vw,2.5rem)] leading-[1.25]">
-              Full Stack MERN & React Native Developer
+            <span className="block mt-2 text-[clamp(1rem,4vw,2.3rem)] leading-[1.25]">
+              Full Stack Developer
+            </span>
+            <span className="block mt-1 text-[clamp(0.85rem,3vw,1.35rem)] text-muted-foreground font-medium">
+              MERN • PERN • React Native • Expo
             </span>
           </motion.h1>
 
@@ -41,9 +44,10 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto px-1"
           >
-            Full Stack Developer passionate about creating responsive web and
-            mobile apps. Pursuing ADP in Software Engineering while building
-            real-world applications with MERN Stack and React Native.
+            Full Stack & Mobile App Developer with 2+ Years of professional
+            experience building and publishing 3 React Native apps on Google
+            Play Store. Skilled in MERN, PERN, React Native, Expo, and modern
+            web technologies.
           </motion.p>
 
           {/* CTA Buttons */}

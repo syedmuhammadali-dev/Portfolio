@@ -5,7 +5,7 @@ import { Code2, Briefcase, MapPin, GraduationCap } from "lucide-react";
 
 const stats = [
   { icon: Code2, label: "Projects Built", value: "20+" },
-  { icon: Briefcase, label: "Experience", value: "2+ Years" },
+  { icon: Briefcase, label: "Experience", value: "9+ Months" },
   { icon: GraduationCap, label: "Certifications", value: "12+" },
   { icon: MapPin, label: "Location", value: "Karachi, PK" },
 ];
@@ -42,11 +42,13 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-            I'm Syed Muhammad Ali, a Frontend & Full Stack Developer passionate
-            about building beautiful, responsive web and mobile applications.
-            Skilled in React, Next.js, and React Native, I'm currently advancing
-            my full-stack skills through MERN development at Saylani SMIT while
-            pursuing ADP in Software Engineering at Ilma University.
+            I'm Syed Muhammad Ali, a Full Stack & Mobile App Developer with 9
+            months of professional experience building scalable web and mobile
+            applications. I've published 3 React Native apps on Google Play
+            Store featuring real-time order management, push notifications, and
+            multilingual support. Proficient in MERN & PERN stacks, React
+            Native, and Expo, I specialize in delivering end-to-end solutions
+            from concept to deployment.
           </p>
 
           {/* Stats Row */}
