@@ -47,8 +47,8 @@
     );
     --gradient-hero: radial-gradient(
       ellipse at 50% 0%,
-      hsl(25 95% 60% / 0.15) 0%,
-      transparent 60%
+      hsl(25 95% 60% / 0.2) 0%,
+      transparent 70%
     );
 
     --shadow-glow: 0 0 60px -15px hsl(25 95% 60% / 0.3);
@@ -136,6 +136,11 @@
     @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0;
     @apply after:bg-primary after:transition-all after:duration-300;
     @apply hover:after:w-full;
+  }
+
+  .section-divider {
+    @apply mx-auto w-20 h-[2px] rounded-full;
+    background: var(--gradient-primary);
   }
 }
 

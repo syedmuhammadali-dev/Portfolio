@@ -15,10 +15,15 @@ const Index = () => {
       <main>
         <Hero />
         <About />
+        <div className="section-divider" />
         <Skills />
+        <div className="section-divider" />
         <Projects />
+        <div className="section-divider" />
         <Education />
+        <div className="section-divider" />
         <Certificates />
+        <div className="section-divider" />
         <Contact />
       </main>
       <Footer />

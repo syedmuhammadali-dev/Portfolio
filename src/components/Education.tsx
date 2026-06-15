@@ -84,7 +84,7 @@ const certifications = [
   {
     title: "Wordpress Development",
     institution: "Fixit Institute",
-    period: "2024 Feburary To 2024 April",
+    period: "2024 February To 2024 April",
     completed: true,
   },
   {

@@ -8,7 +8,7 @@ const mobileProjects = [
     title: "RoadHelper Mobile App",
     featured: true,
     description:
-      "A cross-platform mobile application bUIlt with React Native CLI, designed for multiple users with different roles. Features include real-time tracking, notifications, and user-friendly UI. Light and Dark Theme. Three languages supported. My role focused on bUIlding responsive screens, integrating APIs, and ensuring smooth mobile performance.",
+      "A cross-platform mobile application built with React Native CLI, designed for multiple users with different roles. Features include real-time tracking, notifications, and user-friendly UI. Light and Dark Theme. Three languages supported. My role focused on bUIlding responsive screens, integrating APIs, and ensuring smooth mobile performance.",
     tech: [
       "React Native CLI",
       "i18n",
@@ -27,7 +27,7 @@ const mobileProjects = [
   {
     title: "TalkBridge Chat App",
     description:
-      "TalkBridge Chat App is a cross-platform mobile application bUIlt with React Native CLI, designed for multiple users with different roles. Features include real-time messaging, push notifications, group chats, and user-friendly UI. Light and Dark Theme supported. My role focused on bUIlding responsive screens, integrating APIs, implementing real-time chat functionality, and ensuring smooth mobile performance.",
+      "TalkBridge Chat App is a cross-platform mobile application built with React Native CLI, designed for multiple users with different roles. Features include real-time messaging, push notifications, group chats, and user-friendly UI. Light and Dark Theme supported. My role focused on bUIlding responsive screens, integrating APIs, implementing real-time chat functionality, and ensuring smooth mobile performance.",
     tech: [
       "React Native CLI",
       "TypeScript",
@@ -175,7 +175,7 @@ const reactProjects = [
   {
     title: "TalkBridge Chat Web",
     description:
-      "Real-time chat application bUIlt with React.js and TypeScript featuring one-to-one messaging, group chats, authentication, responsive UI, and seamless user experience.",
+      "Real-time chat application built with React.js and TypeScript featuring one-to-one messaging, group chats, authentication, responsive UI, and seamless user experience.",
     tech: [
       "React.js",
       "TypeScript",
@@ -200,7 +200,7 @@ const reactProjects = [
   {
     title: "React Portfolio Website",
     description:
-      "Old Personal portfolio website showcasing frontend development projects, skills, and professional journey bUIlt with React and TypeScript.",
+      "Old Personal portfolio website showcasing frontend development projects, skills, and professional journey built with React and TypeScript.",
     tech: ["React.js", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/syedmuhammadali-dev/old-react-portfolio",
     live: "https://old-react-portfolio-puce.vercel.app/",
@@ -208,7 +208,7 @@ const reactProjects = [
   {
     title: "Student Portal",
     description:
-      "Student Portal - a hackathon project bUIlt with React.js and TypeScript to help students access courses and events. Features responsive UI, smooth animations with Framer Motion, and intUItive navigation.",
+      "Student Portal - a hackathon project built with React.js and TypeScript to help students access courses and events. Features responsive UI, smooth animations with Framer Motion, and intUItive navigation.",
     tech: [
       "React.js",
       "TypeScript",
@@ -223,7 +223,7 @@ const reactProjects = [
   {
     title: "MyBindle Website",
     description:
-      "Responsive business website bUIlt with React featuring modern UI components, optimized layouts, and user-friendly navigation.",
+      "Responsive business website built with React featuring modern UI components, optimized layouts, and user-friendly navigation.",
     tech: ["React.js", "JavaScript", "Tailwind CSS", "CSS3"],
     github: "https://github.com/syedmuhammadali-dev/Mybindle-react",
     live: "https://my-bindle-website-react.vercel.app/",
@@ -259,7 +259,7 @@ const webProjects = [
   {
     title: "YouTube Clone",
     description:
-      "A frontend clone of YouTube bUIlt using Tailwind CSS with responsive UI.",
+      "A frontend clone of YouTube built using Tailwind CSS with responsive UI.",
     tech: ["HTML5", "Tailwind CSS"],
     github:
       "https://github.com/syedmuhammadali-dev/Tailwind-Assignments/tree/master/youtube-clone",
@@ -276,7 +276,7 @@ const webProjects = [
   {
     title: "Google Clone",
     description:
-      "Google homepage clone bUIlt using HTML and CSS with pixel-perfect layout.",
+      "Google homepage clone built using HTML and CSS with pixel-perfect layout.",
     tech: ["HTML5", "CSS3"],
     github: "https://github.com/syedmuhammadali-dev/Google-Clone",
     live: "http://tailwind-assignment.surge.sh/google-UI/index.html",
@@ -291,7 +291,7 @@ const webProjects = [
   },
   {
     title: "Nexcent Website",
-    description: "A modern responsive landing page bUIlt using Tailwind CSS.",
+    description: "A modern responsive landing page built using Tailwind CSS.",
     tech: ["Tailwind CSS", "HTML5"],
     github: "https://github.com/syedmuhammadali-dev/Nexcent-Website",
     live: "https://nexcentclone.surge.sh/",

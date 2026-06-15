@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { Code2, Briefcase, MapPin, GraduationCap } from "lucide-react";
+
+const stats = [
+  { icon: Code2, label: "Projects Built", value: "20+" },
+  { icon: Briefcase, label: "Experience", value: "2+ Years" },
+  { icon: GraduationCap, label: "Certifications", value: "12+" },
+  { icon: MapPin, label: "Location", value: "Karachi, PK" },
+];
 
 const About = () => {
   const ref = useRef(null);
@@ -19,7 +27,7 @@ const About = () => {
           <img
             src="/Ali-img.jpeg"
             alt="Syed Muhammad Ali"
-            className="w-48 h-48 rounded-full mx-auto border-4 border-primary object-cover shadow-lg"
+            className="w-48 h-48 rounded-full mx-auto border-4 border-primary object-cover shadow-[0_0_30px_-5px] shadow-primary/30"
           />
         </motion.div>
 
@@ -33,13 +41,34 @@ const About = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-6">
             About <span className="text-gradient">Me</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-10">
             I'm Syed Muhammad Ali, a Frontend & Full Stack Developer passionate
             about building beautiful, responsive web and mobile applications.
-            Skilled in React, Next.js, and React Native, I’m currently advancing
+            Skilled in React, Next.js, and React Native, I'm currently advancing
             my full-stack skills through MERN development at Saylani SMIT while
             pursuing ADP in Software Engineering at Ilma University.
           </p>
+
+          {/* Stats Row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+            {stats.map((stat, i) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.4, delay: 0.2 + i * 0.08 }}
+                className="project-card p-4 text-center"
+              >
+                <stat.icon className="w-5 h-5 text-primary mx-auto mb-2" />
+                <div className="font-display text-xl font-bold text-foreground">
+                  {stat.value}
+                </div>
+                <div className="text-xs text-muted-foreground mt-1">
+                  {stat.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

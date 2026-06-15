@@ -54,7 +54,6 @@ const skillCategories = [
       "Postman",
       "Thunder Client",
       "VS Code",
-      "Postman",
       "Figma to Code",
       "Git & GitHub",
     ],
