@@ -10,30 +10,52 @@ import {
   Facebook,
   Send,
   CheckCircle,
+  Loader2,
 } from "lucide-react";
 
 const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
     const form = e.currentTarget;
-    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
-    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-    const message = (form.elements.namedItem("message") as HTMLTextAreaElement)
-      .value;
-    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-    );
-    window.open(
-      `https://mail.google.com/mail/?view=cm&fs=1&to=syeadmuhammedalimazhar@gmail.com&su=${subject}&body=${body}`,
-      "_blank",
-    );
-    setSent(true);
-    setTimeout(() => setSent(false), 4000);
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(
+        "https://formsubmit.co/ajax/syeadmuhammedalimazhar@gmail.com",
+        {
+          method: "POST",
+          body: formData,
+        },
+      );
+      const data = await res.json();
+      if (data.success) {
+        setSent(true);
+        form.reset();
+        setTimeout(() => setSent(false), 4000);
+      }
+    } catch {
+      // Fallback: open Gmail
+      const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+      const email = (form.elements.namedItem("email") as HTMLInputElement)
+        .value;
+      const message = (
+        form.elements.namedItem("message") as HTMLTextAreaElement
+      ).value;
+      window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=syeadmuhammedalimazhar@gmail.com&su=${encodeURIComponent(`Portfolio Contact from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`,
+        "_blank",
+      );
+      setSent(true);
+      setTimeout(() => setSent(false), 4000);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -119,9 +141,15 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="btn-primary w-full flex items-center justify-center gap-2"
+                disabled={loading}
+                className="btn-primary w-full flex items-center justify-center gap-2 disabled:opacity-60"
               >
-                {sent ? (
+                {loading ? (
+                  <>
+                    <Loader2 size={18} className="animate-spin" />
+                    Sending...
+                  </>
+                ) : sent ? (
                   <>
                     <CheckCircle size={18} />
                     Message Sent!

@@ -101,11 +101,11 @@ const reactProjects = [
     tech: [
       "Next.js",
       "TypeScript",
-      "API Integration",
       "Tailwind CSS",
       "Mantine UI",
       "Material UI",
       "Redux",
+      "API Integration",
       "Vercel",
     ],
     github: "",
@@ -127,23 +127,7 @@ const reactProjects = [
     github: "",
     live: "https://core-stock-admin-UI.vercel.app/login",
   },
-  {
-    title: "CoreStock Admin Panel",
-    featured: true,
-    description:
-      "Comprehensive admin panel for inventory and warehouse management with role-based permissions, reporting dashboards, stock monitoring, and advanced management features. Worked as Senior Frontend Developer.",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Mantine UI",
-      "Material UI",
-      "Redux",
-      "Vercel",
-    ],
-    github: "",
-    live: "https://corestock-admin-panel.vercel.app/",
-  },
+
   {
     title: "Road Helper Web App",
     featured: true,
@@ -238,78 +222,6 @@ const reactProjects = [
     live: "https://text-changer.surge.sh/",
   },
 ];
-
-const webProjects = [
-  {
-    title: "Social Media App",
-    description:
-      "A social media application with local storage using HTML, CSS, and JavaScript.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Local Storage"],
-    github:
-      "https://github.com/syedmuhammadali-dev/socialmedia-app-html-bootstrap",
-    live: "https://socialmedia-app-ali.vercel.app/",
-  },
-  {
-    title: "OLX Clone",
-    description:
-      "A classifieds marketplace UI with search/filter listings, category browsing, and listing details.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    github: "https://github.com/syedmuhammadali-dev/olx-clone",
-    live: "http://olx-by-ali.surge.sh/",
-  },
-  {
-    title: "YouTube Clone",
-    description:
-      "A frontend clone of YouTube built using Tailwind CSS with responsive UI.",
-    tech: ["HTML5", "Tailwind CSS"],
-    github:
-      "https://github.com/syedmuhammadali-dev/Tailwind-Assignments/tree/master/youtube-clone",
-    live: "http://tailwind-assignment.surge.sh/youtube-clone/index.html",
-  },
-  {
-    title: "Pokémon App",
-    description:
-      "A fun Pokémon app fetching data from Pokémon API and displaying it in a styled UI.",
-    tech: ["HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
-    github: "https://github.com/syedmuhammadali-dev/Pokemon-App",
-    live: "https://pokemon-clone-lake.vercel.app/",
-  },
-  {
-    title: "Google Clone",
-    description:
-      "Google homepage clone built using HTML and CSS with pixel-perfect layout.",
-    tech: ["HTML5", "CSS3"],
-    github: "https://github.com/syedmuhammadali-dev/Google-Clone",
-    live: "http://tailwind-assignment.surge.sh/google-UI/index.html",
-  },
-  {
-    title: "CSS Animation Showcase",
-    description:
-      "Creative CSS animations demonstrating transitions and keyframes.",
-    tech: ["HTML5", "CSS3", "Bootstrap"],
-    github: "https://github.com/syedmuhammadali-dev/Animation-website",
-    live: "https://animation-website.surge.sh/",
-  },
-  {
-    title: "Nexcent Website",
-    description: "A modern responsive landing page built using Tailwind CSS.",
-    tech: ["Tailwind CSS", "HTML5"],
-    github: "https://github.com/syedmuhammadali-dev/Nexcent-Website",
-    live: "https://nexcentclone.surge.sh/",
-  },
-];
-
-// const LandingPages = [
-//   {
-//     title: "Social Media App",
-//     description:
-//       "A social media application with local storage using HTML, CSS, and JavaScript.",
-//     tech: ["HTML5", "CSS3", "JavaScript", "Local Storage"],
-//     github:
-//       "https://github.com/syedmuhammadali-dev/socialmedia-app-html-bootstrap",
-//     live: "https://socialmedia-app-ali.vercel.app/",
-//   },
-// ];
 
 interface ProjectCardProps {
   project: {
@@ -452,29 +364,6 @@ const Projects = () => {
                 key={project.title}
                 project={project}
                 index={index}
-                isInView={isInView}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Web Development Projects */}
-        <div>
-          <motion.h3
-            initial={{ opacity: 0, x: -20 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="font-display text-xl font-semibold mb-8 flex items-center gap-3"
-          >
-            <span className="w-8 h-[2px] bg-primary" />
-            Web Development Projects
-          </motion.h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {webProjects.map((project, index) => (
-              <ProjectCard
-                key={project.title}
-                project={project}
-                index={index + reactProjects.length}
                 isInView={isInView}
               />
             ))}
