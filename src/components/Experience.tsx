@@ -9,6 +9,13 @@ import {
   MapPin,
   Users,
   Bell,
+  Layout,
+  Server,
+  Bot,
+  ShoppingCart,
+  MessageSquare,
+  Building2,
+  Database,
 } from "lucide-react";
 
 const titleVariants = {
@@ -32,34 +39,54 @@ const cardVariants = {
 
 const experiences = [
   {
-    role: "FullStack & Mobile App Developer",
+    role: "Full Stack & Mobile App Developer",
     company: "AppMash",
     location: "Karachi",
     period: "9 Months",
     highlights: [
       {
         icon: Smartphone,
-        text: "Published 3 React Native apps on Google Play Store: Customer App (food/grocery/ride booking), Restaurant Partner App (order & menu management), and Driver App (delivery & ride fulfillment)",
+        text: "Published 3 React Native apps on Google Play Store: Customer App (food/grocery/ride booking), Restaurant Partner App (order & menu management with Kanban boards), and Driver App (delivery & ride fulfillment with real-time navigation)",
       },
       {
-        icon: Users,
-        text: "Implemented real-time order management with Kanban-style boards using Firebase Firestore",
+        icon: Building2,
+        text: "Built enterprise-level full stack applications using MERN/PERN stacks — ERP systems (Barakah), AI-powered clinic management, helpdesk & analytics platforms (Helplytics) with role-based dashboards",
+      },
+      {
+        icon: Bot,
+        text: "Integrated AI features into production apps using Google Gemini and OpenAI — including AI-powered prescription explanations and intelligent customer support workflows",
+      },
+      {
+        icon: ShoppingCart,
+        text: "Integrated multiple payment gateways (Yaad, Stripe) and PDF report generation for invoices, prescriptions, and business analytics",
+      },
+      {
+        icon: MessageSquare,
+        text: "Developed real-time chat applications (TalkBridge) with one-to-one messaging, group chats, and Socket.io integration for seamless communication",
       },
       {
         icon: Bell,
-        text: "Integrated phone authentication, push notifications, and real-time location tracking for enhanced user engagement and operational efficiency",
+        text: "Implemented push notifications, phone authentication, and real-time location tracking across mobile apps using Firebase Cloud Messaging and Geolocation APIs",
       },
       {
         icon: Globe,
-        text: "Built multi language support (English/Urdu/Hebrew/Arabic/Roman) with i18n for global user base",
+        text: "Built Multi Language support (English/Urdu/Hebrew/Arabic/Roman English) with i18n for global user base across web and mobile platforms",
       },
       {
-        icon: CreditCard,
-        text: "Integrated payment gateway (Yaad), Stripe and PDF report generation for invoices and analytics",
+        icon: Server,
+        text: "Designed and built RESTful APIs, Firebase backends, and MongoDB/PostgreSQL database schemas for scalable web and mobile applications",
+      },
+      {
+        icon: Layout,
+        text: "Developed responsive frontends with React.js, Next.js, and TypeScript using Tailwind CSS, shadcn/ui, Material UI, Mantine UI, Ant Design, and Framer Motion animations",
+      },
+      {
+        icon: Database,
+        text: "Managed databases — MongoDB with Mongoose, PostgreSQL with pgAdmin, Firebase Firestore for real-time sync and offline support",
       },
       {
         icon: MapPin,
-        text: "Published and managed entire app lifecycle on Google Play Console, including updates and version management",
+        text: "Published and managed entire app lifecycle on Google Play Console, including app updates, version management, and store listing optimization",
       },
     ],
   },
