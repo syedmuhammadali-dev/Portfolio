@@ -42,7 +42,7 @@ const mobileProjects = [
       "i18n (EN/UR)",
     ],
     github: "",
-    live: "",
+    live: "https://drive.google.com/file/d/1aOMhhGuImwqAKAGO3cyvQVzEqkPkwXq4/view?usp=drive_link",
   },
   {
     title: "PatternIntel — AI Health Analyzer",
