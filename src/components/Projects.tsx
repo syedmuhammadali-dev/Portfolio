@@ -128,7 +128,7 @@ const reactProjects = [
       "Vercel",
     ],
     github: "",
-    live: "https://corestock-admin-panel.vercel.app/",
+    live: "https://corestock-adminapp.vercel.app/",
   },
   {
     title: "CoreStock — User Panel",
@@ -146,7 +146,7 @@ const reactProjects = [
       "Vercel",
     ],
     github: "",
-    live: "https://corestock-web.vercel.app/",
+    live: "https://corestock-webapp.vercel.app/",
   },
 
   {
