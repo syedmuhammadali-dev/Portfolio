@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink, Github, Folder, Star } from "lucide-react";
+import { track } from "@vercel/analytics";
 
 const mobileProjects = [
   {
@@ -267,6 +268,7 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => (
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => track("Project Link Click", { project: project.title, type: "github" })}
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="View on GitHub"
             >
@@ -277,6 +279,7 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => (
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track("Project Link Click", { project: project.title, type: "live" })}
             className="text-muted-foreground hover:text-primary transition-colors"
             aria-label="View live site"
           >

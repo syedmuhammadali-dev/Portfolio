@@ -12,6 +12,7 @@ import {
   CheckCircle,
   Loader2,
 } from "lucide-react";
+import { track } from "@vercel/analytics";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -35,6 +36,7 @@ const Contact = () => {
       );
       const data = await res.json();
       if (data.success) {
+        track("Contact Form Submit");
         setSent(true);
         form.reset();
         setTimeout(() => setSent(false), 4000);
@@ -51,6 +53,7 @@ const Contact = () => {
         `https://mail.google.com/mail/?view=cm&fs=1&to=syeadmuhammedalimazhar@gmail.com&su=${encodeURIComponent(`Portfolio Contact from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`,
         "_blank",
       );
+      track("Contact Form Submit", { fallback: "gmail" });
       setSent(true);
       setTimeout(() => setSent(false), 4000);
     } finally {
@@ -181,6 +184,7 @@ const Contact = () => {
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=syeadmuhammedalimazhar@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => track("Social Link Click", { network: "email", location: "contact" })}
                   className="text-sm hover:text-primary transition-colors truncate"
                 >
                   syeadmuhammedalimazhar@gmail.com
@@ -204,6 +208,7 @@ const Contact = () => {
                   href="https://github.com/syedmuhammadali-dev"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => track("Social Link Click", { network: "github", location: "contact" })}
                   className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all text-sm text-muted-foreground"
                 >
                   <Github size={16} /> GitHub
@@ -212,6 +217,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/syed-muhammed-ali/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => track("Social Link Click", { network: "linkedin", location: "contact" })}
                   className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all text-sm text-muted-foreground"
                 >
                   <Linkedin size={16} /> LinkedIn
@@ -220,6 +226,7 @@ const Contact = () => {
                   href="https://web.facebook.com/ali.mazhar.272106"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => track("Social Link Click", { network: "facebook", location: "contact" })}
                   className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all text-sm text-muted-foreground"
                 >
                   <Facebook size={16} /> Facebook
@@ -228,6 +235,7 @@ const Contact = () => {
                   href="https://wa.me/923190586822"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => track("Social Link Click", { network: "whatsapp", location: "contact" })}
                   className="flex items-center gap-2 p-2.5 rounded-lg bg-secondary hover:bg-green-600 hover:text-white transition-all text-sm text-muted-foreground"
                 >
                   <svg
@@ -246,6 +254,7 @@ const Contact = () => {
                 href="/SYED-MUHAMMAD-ALI.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => track("Resume Download", { location: "contact" })}
                 className="btn-primary flex items-center justify-center gap-2 w-full mt-3"
               >
                 <Download size={16} />

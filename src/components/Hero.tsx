@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, Facebook } from "lucide-react";
+import { track } from "@vercel/analytics";
 import AchievementBanner from "./AchievementBanner";
 
 const Hero = () => {
@@ -67,6 +68,7 @@ const Hero = () => {
               href="/SYED-MUHAMMAD-ALI.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => track("Resume Download", { location: "hero" })}
               className="btn-outline w-full sm:w-auto sm:min-w-[170px] text-center"
             >
               Get Resume
@@ -84,6 +86,7 @@ const Hero = () => {
               href="https://github.com/syedmuhammadali-dev"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => track("Social Link Click", { network: "github", location: "hero" })}
               className="p-2.5 sm:p-3 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="GitHub"
             >
@@ -93,6 +96,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/syed-muhammed-ali/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => track("Social Link Click", { network: "linkedin", location: "hero" })}
               className="p-2.5 sm:p-3 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="LinkedIn"
             >
@@ -102,6 +106,7 @@ const Hero = () => {
               href="https://web.facebook.com/ali.mazhar.272106"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => track("Social Link Click", { network: "facebook", location: "hero" })}
               className="p-2.5 sm:p-3 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="Facebook"
             >
@@ -111,6 +116,7 @@ const Hero = () => {
               href="https://mail.google.com/mail/?view=cm&fs=1&to=syeadmuhammedalimazhar@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => track("Social Link Click", { network: "email", location: "hero" })}
               className="p-2.5 sm:p-3 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
               aria-label="Email"
             >
