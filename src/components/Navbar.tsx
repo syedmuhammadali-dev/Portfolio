@@ -103,11 +103,10 @@ const Navbar = () => {
                 onClick={() => setActiveSection(item.href.replace("#", ""))}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.97 }}
-                className={`relative px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${
-                  activeSection === item.href.replace("#", "")
+                className={`relative px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${activeSection === item.href.replace("#", "")
                     ? "text-primary-foreground"
                     : "text-muted-foreground hover:text-foreground"
-                }`}
+                  }`}
               >
                 {activeSection === item.href.replace("#", "") && (
                   <motion.span
@@ -124,11 +123,10 @@ const Navbar = () => {
               onClick={() => setActiveSection("contact")}
               whileHover={{ y: -2, scale: 1.01 }}
               whileTap={{ scale: 0.98 }}
-              className={`text-sm py-2 px-4 ml-2 rounded-lg transition-all duration-300 ${
-                isContactActive
+              className={`text-sm py-2 px-4 ml-2 rounded-lg transition-all duration-300 ${isContactActive
                   ? "bg-primary text-primary-foreground shadow-lg shadow-primary/30 ring-2 ring-primary/40"
                   : "btn-primary"
-              }`}
+                }`}
             >
               Hire Me
             </motion.a>
@@ -155,11 +153,11 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{ opacity: 0, maxHeight: 0 }}
+            animate={{ opacity: 1, maxHeight: "500px" }}
+            exit={{ opacity: 0, maxHeight: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden card-glass border-t border-border"
+            className="md:hidden card-glass border-t border-border overflow-hidden"
           >
             <div className="section-container py-4 flex flex-col gap-2">
               {navItems.map((item) => (
@@ -172,11 +170,10 @@ const Navbar = () => {
                   }}
                   whileHover={{ x: 4 }}
                   whileTap={{ scale: 0.98 }}
-                  className={`rounded-lg px-3 py-2.5 transition-colors ${
-                    activeSection === item.href.replace("#", "")
+                  className={`rounded-lg px-3 py-2.5 transition-colors ${activeSection === item.href.replace("#", "")
                       ? "bg-primary/15 text-primary"
                       : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </motion.a>
@@ -189,11 +186,10 @@ const Navbar = () => {
                 }}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className={`text-center text-sm py-2 mt-2 rounded-lg transition-all duration-300 ${
-                  isContactActive
+                className={`text-center text-sm py-2 mt-2 rounded-lg transition-all duration-300 ${isContactActive
                     ? "bg-primary text-primary-foreground shadow-lg shadow-primary/30 ring-2 ring-primary/40"
                     : "btn-primary"
-                }`}
+                  }`}
               >
                 Hire Me
               </motion.a>
