@@ -61,7 +61,7 @@ const mobileProjects = [
       "Local-First Architecture",
     ],
     github: "",
-    live: "",
+    live: "https://drive.google.com/file/d/1kB3aBOpvtQLhdZVL3gtkbQQYbY3rV5Wj/view",
   },
 ];
 
