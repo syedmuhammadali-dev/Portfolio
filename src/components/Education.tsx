@@ -72,8 +72,8 @@ const certifications = [
   {
     title: "Full Stack / MERN Stack Development",
     institution: "Saylani SMIT",
-    period: "2025 - Present",
-    inProgress: true,
+    period: "2025 Feburary - 2026 May",
+    completed: true,
   },
   {
     title: "Frontend Development",
@@ -90,7 +90,7 @@ const certifications = [
   {
     title: "C.I.T",
     institution: "Info Channel",
-    period: "2023 March To 2023 August",
+    period: "2021",
     completed: true,
   },
 ];
@@ -204,11 +204,11 @@ const Education = () => {
                       <span className="text-xs text-muted-foreground">
                         {cert.period}
                       </span>
-                      {cert.inProgress && (
+                      {/* {cert.inProgress && (
                         <span className=" text-nowrap px-2 py-0.5 text-xs font-medium rounded-full bg-primary/10 text-primary">
                           In Progress
                         </span>
-                      )}
+                      )} */}
                       {cert.completed && (
                         <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-green-500/10 text-green-500">
                           Completed

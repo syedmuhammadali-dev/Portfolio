@@ -40,7 +40,7 @@ const certificates: Certificate[] = [
   {
     title: "InfoChannel CIT Course",
     issuer: "InfoChannel",
-    date: "2025",
+    date: "2021",
     pdf: "/certifications/InfoChannel-CIT-course.pdf",
     preview: "/certifications/Screenshot 2026-04-10 171657.png",
     link: "/certifications/InfoChannel-CIT-course.pdf",
