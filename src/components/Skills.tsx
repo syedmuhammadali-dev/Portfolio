@@ -57,6 +57,18 @@ const skillCategories = [
     ],
   },
   {
+    title: "Package Development & Publishing",
+    icon: Sparkles,
+    skills: [
+      "npm Package Development",
+      "Package.json Configuration",
+      "Semantic Versioning",
+      "npm Publish Process",
+      "Package Maintenance",
+      "Dependency Management",
+    ],
+  },
+  {
     title: "AI & Productivity",
     icon: Sparkles,
     skills: [
