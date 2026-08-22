@@ -1,11 +1,22 @@
-import { Users, Award, Star } from "lucide-react";
+import { Users, Award, Star, Link as LinkIcon } from "lucide-react";
 
 export default function AchievementBanner() {
   return (
     <div className="w-full bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 border border-primary/30 rounded-2xl p-4 md:p-6 mb-6 md:mb-8">
       {/* Main Title */}
-      <h2 className="text-center text-foreground font-bold text-lg md:text-2xl lg:text-3xl mb-2">
-        <span className="text-gradient">1st Position</span> — Saylani Mass IT Training 2026
+      <h2 className="text-center text-foreground font-bold text-lg md:text-2xl lg:text-3xl mb-2 flex items-center justify-center gap-2">
+        <span>
+          <span className="text-gradient">1st Position</span> — Saylani Mass IT Training 2026
+        </span>
+        <a
+          href="https://www.facebook.com/story.php?story_fbid=122303442680153270&id=61554598103536"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View announcement post"
+          className="inline-flex items-center justify-center p-1.5 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors align-middle"
+        >
+          <LinkIcon className="w-4 h-4 md:w-5 md:h-5" />
+        </a>
       </h2>
 
       {/* Course Name */}

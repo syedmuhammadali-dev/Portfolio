@@ -45,7 +45,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto px-1"
           >
-            Full Stack & Mobile App Developer with 9+ months of professional
+            Full Stack & Mobile App Developer with 2+ Years of professional
             experience building and publishing 3 React Native apps on Google
             Play Store. Skilled in MERN, PERN, React Native, Expo, and modern
             web technologies.

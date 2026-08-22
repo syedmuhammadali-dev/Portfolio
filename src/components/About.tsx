@@ -5,7 +5,7 @@ import { Code2, Briefcase, MapPin, GraduationCap } from "lucide-react";
 
 const stats = [
   { icon: Code2, label: "Real Projects Built", value: "15+" },
-  { icon: Briefcase, label: "Experience", value: "9+ Months" },
+  { icon: Briefcase, label: "Experience", value: "2+ Years" },
   { icon: GraduationCap, label: "Certifications", value: "12+" },
   { icon: MapPin, label: "Location", value: "Karachi, PK" },
 ];
