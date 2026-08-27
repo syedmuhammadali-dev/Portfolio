@@ -25,6 +25,17 @@ const Footer = () => {
 
             <div className="flex items-center gap-2">
               <a
+                href="https://www.npmjs.com/package/gdrive-db"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 text-primary hover:text-primary-foreground"
+              >
+                gdrive-db
+              </a>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <a
                 href="https://github.com/syedmuhammadali-dev/React-Dev-Footer-pkg"
                 target="_blank"
                 rel="noopener noreferrer"

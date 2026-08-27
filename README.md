@@ -53,8 +53,18 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
+## npm Packages
+
+- [**gdrive-db**](https://www.npmjs.com/package/gdrive-db) — A beginner-friendly database-like storage SDK powered by the end user's own Google Drive. Not a replacement for MongoDB/PostgreSQL/Firebase — built for learning, prototypes, demos, and small frontend projects.
+- [**React-Dev-Footer-pkg**](https://github.com/syedmuhammadali-dev/React-Dev-Footer-pkg) — A simple, reusable React footer component published to npm.
+
+All published packages: [npmjs.com/~syedmuhammadali-dev](https://www.npmjs.com/~syedmuhammadali-dev)
+
+---
+
 ## Connect With Me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/syed-muhammed-ali/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=vercel)](https://ali-portfolio-nine.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-gray?style=for-the-badge&logo=github)](https://github.com/syedmuhammadali-dev)
+[![npm](https://img.shields.io/badge/npm-red?style=for-the-badge&logo=npm)](https://www.npmjs.com/~syedmuhammadali-dev)

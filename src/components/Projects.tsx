@@ -1,8 +1,28 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, Folder, Star } from "lucide-react";
+import { ExternalLink, Github, Folder, Star, Package } from "lucide-react";
 import { track } from "@vercel/analytics";
+
+const npmPackages = [
+  {
+    title: "gdrive-db",
+    featured: true,
+    description:
+      "A beginner-friendly database-like storage SDK powered by the end user's own Google Drive. Not a replacement for MongoDB/PostgreSQL/Firebase — built for learning, prototypes, demos, and small frontend projects.",
+    tech: ["TypeScript", "Google Drive API", "OAuth", "npm Package"],
+    github: "https://github.com/syedmuhammadali-dev/G-Drive-DB",
+    npm: "https://www.npmjs.com/package/gdrive-db",
+  },
+  {
+    title: "React-Dev-Footer-pkg",
+    description:
+      "A simple, reusable React footer component package published to npm for quickly dropping a developer footer into any React project.",
+    tech: ["React", "TypeScript", "npm Package"],
+    github: "https://github.com/syedmuhammadali-dev/React-Dev-Footer-pkg",
+    npm: "https://www.npmjs.com/~syedmuhammadali-dev",
+  },
+];
 
 const mobileProjects = [
   {
@@ -234,7 +254,8 @@ interface ProjectCardProps {
     description: string;
     tech: string[];
     github: string;
-    live: string;
+    live?: string;
+    npm?: string;
     featured?: boolean;
   };
   index: number;
@@ -275,16 +296,30 @@ const ProjectCard = ({ project, index, isInView }: ProjectCardProps) => (
               <Github size={20} />
             </a>
           )}
-          <a
-            href={project.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => track("Project Link Click", { project: project.title, type: "live" })}
-            className="text-muted-foreground hover:text-primary transition-colors"
-            aria-label="View live site"
-          >
-            <ExternalLink size={20} />
-          </a>
+          {project.npm && (
+            <a
+              href={project.npm}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => track("Project Link Click", { project: project.title, type: "npm" })}
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="View on npm"
+            >
+              <Package size={20} />
+            </a>
+          )}
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => track("Project Link Click", { project: project.title, type: "live" })}
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="View live site"
+            >
+              <ExternalLink size={20} />
+            </a>
+          )}
         </div>
       </div>
       <h3 className="font-display text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
@@ -344,6 +379,29 @@ const Projects = () => {
           </motion.h3>
           <div className="grid sm:grid-cols-2 gap-6">
             {mobileProjects.map((project, index) => (
+              <ProjectCard
+                key={project.title}
+                project={project}
+                index={index}
+                isInView={isInView}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* npm Packages */}
+        <div className="mb-16">
+          <motion.h3
+            initial={{ opacity: 0, x: -20 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.6 }}
+            className="font-display text-xl font-semibold mb-8 flex items-center gap-3"
+          >
+            <span className="w-8 h-[2px] bg-primary" />
+            Published npm Packages
+          </motion.h3>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {npmPackages.map((project, index) => (
               <ProjectCard
                 key={project.title}
                 project={project}
