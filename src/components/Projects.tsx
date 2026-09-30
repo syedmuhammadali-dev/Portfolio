@@ -83,6 +83,22 @@ const mobileProjects = [
     github: "",
     live: "https://drive.google.com/file/d/1kB3aBOpvtQLhdZVL3gtkbQQYbY3rV5Wj/view",
   },
+  {
+    title: "Field Capture",
+    featured: true,
+    description:
+      "A mobile application built with React Native for field data capture and management. Features offline data synchronization, form validation, and export capabilities for field workers and researchers.",
+    tech: [
+      "React Native",
+      "TypeScript",
+      "AsyncStorage",
+      "Form Validation",
+      "Offline Sync",
+      "Data Export",
+    ],
+    github: "https://github.com/syedmuhammadali-dev/Field-Capture",
+    live: "https://drive.google.com/file/d/1I6V72ydhaE8eLhWVGp3xBEwO8UkDqda9/view?usp=drive_link",
+  },
 ];
 
 const reactProjects = [
