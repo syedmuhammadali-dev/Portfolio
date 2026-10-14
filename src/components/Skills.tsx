@@ -89,6 +89,10 @@ const skillCategories = [
       "Vercel",
       "i18n",
       "Payment Gateway Integration",
+      "Technical SEO",
+      "Google Search Console",
+      "Google Analytics",
+      "Redux Toolkit",
     ],
   },
 ];

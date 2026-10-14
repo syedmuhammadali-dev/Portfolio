@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ali-portfolio-nine.vercel.app/</loc>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ali-portfolio-nine.vercel.app/Ali-img.jpeg</image:loc>
+      <image:title>Syed Muhammad Ali, Full Stack Developer</image:title>
+    </image:image>
   </url>
 </urlset>

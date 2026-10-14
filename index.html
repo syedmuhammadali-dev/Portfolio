@@ -16,6 +16,22 @@
       name="robots"
       content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"
     />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" hreflang="en" href="https://ali-portfolio-nine.vercel.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://ali-portfolio-nine.vercel.app/" />
+    <link rel="me" href="https://github.com/syedmuhammadali-dev" />
+    <link rel="me" href="https://www.linkedin.com/in/syed-muhammed-ali/" />
+    <link rel="preload" as="image" href="/Ali-img.jpeg" fetchpriority="high" />
+    <meta name="application-name" content="Syed Muhammad Ali Portfolio" />
+    <meta name="apple-mobile-web-app-title" content="Syed Muhammad Ali" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="rating" content="general" />
+    <meta name="geo.region" content="PK-SD" />
+    <meta name="geo.placename" content="Karachi" />
+    <meta name="language" content="English" />
+    <meta property="profile:first_name" content="Syed Muhammad" />
+    <meta property="profile:last_name" content="Ali" />
+    <meta property="profile:username" content="syedmuhammadali-dev" />
     <meta name="theme-color" content="#0f172a" />
     <meta name="author" content="Syed Muhammad Ali" />
 
@@ -43,7 +59,7 @@
     <meta property="og:url" content="https://ali-portfolio-nine.vercel.app/" />
     <meta
       property="og:image"
-        content="https://www.syedmuhammadali.dev/og-image.jpeg"
+        content="https://ali-portfolio-nine.vercel.app/og-image.jpeg"
     />
     <meta
       property="og:image:alt"
@@ -88,6 +104,7 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://ali-portfolio-nine.vercel.app/#person",
         "name": "Syed Muhammad Ali",
         "email": "syeadmuhammedalimazhar@gmail.com",
         "url": "https://ali-portfolio-nine.vercel.app/",
@@ -99,11 +116,31 @@
           "addressLocality": "Karachi",
           "addressCountry": "PK"
         },
-        "alumniOf": {
+        "alumniOf": [
+          {
+            "@type": "Organization",
+            "name": "Saylani Welfare International Trust",
+            "description": "Saylani Mass IT Training Program — Batch 16, Modern Web Application Development"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "ILMA University"
+          }
+        ],
+        "worksFor": {
           "@type": "Organization",
-          "name": "Saylani Welfare International Trust",
-          "description": "Saylani Mass IT Training Program — Batch 16, Modern Web Application Development"
+          "name": "ProPushHub Corporation (PPH)",
+          "url": "https://pphcorporation.vercel.app/"
         },
+        "nationality": { "@type": "Country", "name": "Pakistan" },
+        "knowsLanguage": ["English", "Urdu"],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Full Stack Developer",
+          "occupationLocation": { "@type": "City", "name": "Karachi" },
+          "skills": "React, Next.js, Node.js, MongoDB, PostgreSQL, React Native, Expo, TypeScript, Technical SEO"
+        },
+        "mainEntityOfPage": "https://ali-portfolio-nine.vercel.app/",
         "award": "1st Position — Saylani Mass IT Training 2026, Batch-16 (Top 1 / 20,000+ students)",
         "knowsAbout": [
           "React.js",
@@ -126,12 +163,18 @@
           "GitHub Copilot",
           "Claude",
           "ChatGPT",
-          "Prompt Engineering"
+          "Prompt Engineering",
+          "Technical SEO",
+          "Google Search Console",
+          "REST APIs",
+          "Firebase",
+          "Socket.io",
+          "Redux Toolkit"
         ],
         "sameAs": [
           "https://github.com/syedmuhammadali-dev",
           "https://www.npmjs.com/~syedmuhammadali-dev",
-          "https://ali-portfolio-nine.vercel.app/",
+          "https://www.syedmuhammadali.dev/",
           "https://www.linkedin.com/in/syed-muhammed-ali/",
           "https://www.facebook.com/ali.mazhar.272106"
         ]
@@ -141,18 +184,61 @@
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": "https://ali-portfolio-nine.vercel.app/#website",
         "name": "Syed Muhammad Ali Portfolio",
-        "url": "https://www.syedmuhammadali.dev/",
+        "url": "https://ali-portfolio-nine.vercel.app/",
         "inLanguage": "en",
-        "author": { "@id": "https://www.syedmuhammadali.dev/#person" }
+        "author": { "@id": "https://ali-portfolio-nine.vercel.app/#person" }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": "https://ali-portfolio-nine.vercel.app/#profile",
+        "url": "https://ali-portfolio-nine.vercel.app/",
+        "name": "Syed Muhammad Ali — Full Stack Developer Portfolio",
+        "inLanguage": "en",
+        "dateModified": "2026-10-14",
+        "isPartOf": { "@id": "https://ali-portfolio-nine.vercel.app/#website" },
+        "mainEntity": { "@id": "https://ali-portfolio-nine.vercel.app/#person" },
+        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://ali-portfolio-nine.vercel.app/og-image.jpeg", "width": 1200, "height": 630 }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Selected projects by Syed Muhammad Ali",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "PPH Corporation Website", "url": "https://pphcorporation.vercel.app/" },
+          { "@type": "ListItem", "position": 2, "name": "Barakah ERP Platform", "url": "https://barakah-erp.vercel.app/" },
+          { "@type": "ListItem", "position": 3, "name": "Helplytics Helpdesk & Analytics", "url": "https://helplytics-frontend.vercel.app/" },
+          { "@type": "ListItem", "position": 4, "name": "RoadHelper Multi-Role App Suite", "url": "https://roadhelper.vercel.app/" },
+          { "@type": "ListItem", "position": 5, "name": "gdrive-db npm package", "url": "https://www.npmjs.com/package/gdrive-db" }
+        ]
       }
     </script>
   </head>
   <body>
     <div id="root"></div>
     <noscript>
-      <h1>Syed Muhammad Ali — Full Stack Developer</h1>
-      <p>MERN, PERN and React Native developer from Karachi, Pakistan. Saylani Mass IT Batch-16 1st position holder with 3 apps published on Google Play. GitHub: github.com/syedmuhammadali-dev</p>
+      <h1>Syed Muhammad Ali — Full Stack Developer (MERN, PERN &amp; React Native)</h1>
+      <p>MERN, PERN and React Native developer from Karachi, Pakistan. Saylani Mass IT Batch-16 1st position holder with 3 apps published on Google Play. Currently Full Stack Engineer at ProPushHub Corporation (PPH); previously at AppMash.</p>
+      <h2>Skills</h2>
+      <p>React.js, Next.js, TypeScript, Node.js, Express.js, MongoDB, PostgreSQL, Firebase, React Native, Expo, Tailwind CSS, Technical SEO.</p>
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://pphcorporation.vercel.app/">PPH Corporation website</a></li>
+        <li><a href="https://barakah-erp.vercel.app/">Barakah ERP platform</a></li>
+        <li><a href="https://helplytics-frontend.vercel.app/">Helplytics helpdesk and analytics</a></li>
+        <li><a href="https://roadhelper.vercel.app/">RoadHelper app suite</a></li>
+      </ul>
+      <p>
+        <a href="https://github.com/syedmuhammadali-dev">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/syed-muhammed-ali/">LinkedIn</a> ·
+        <a href="https://www.npmjs.com/~syedmuhammadali-dev">npm</a>
+      </p>
     </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>

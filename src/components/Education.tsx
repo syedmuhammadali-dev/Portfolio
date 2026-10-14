@@ -46,7 +46,7 @@ const education = [
   {
     institution: "Ilma University",
     degree: "ADP Software Engineering",
-    period: "2025 - Present",
+    period: "Jun 2025 - Aug 2027",
     description:
       "Currently pursuing Associate Degree Program in Software Engineering with focus on modern development practices, programming fundamentals, and software design principles.",
     current: true,
@@ -54,7 +54,7 @@ const education = [
   {
     institution: "Government Degree Boys College",
     degree: "Intermediate (Pre-Engineering)",
-    period: "2022 - 2024",
+    period: "Mar 2022 - Nov 2024",
     description:
       "Completed Intermediate in Pre-Engineering with strong foundation in Mathematics, Physics, and Chemistry.",
     current: false,
@@ -62,7 +62,7 @@ const education = [
   {
     institution: "Kamran Public School",
     degree: "Matric in Computer Science",
-    period: "2008 - 2021",
+    period: "Mar 2008 - Nov 2021",
     description: "Completed Matriculation degree with A-Grade.",
     current: false,
   },

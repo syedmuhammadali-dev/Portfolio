@@ -17,6 +17,8 @@ import {
   Building2,
   Database,
   Sparkles,
+  ExternalLink,
+  Search,
 } from "lucide-react";
 
 const titleVariants = {
@@ -40,10 +42,47 @@ const cardVariants = {
 
 const experiences = [
   {
+    role: "Full Stack Engineer",
+    company: "ProPushHub Corporation (PPH)",
+    location: "Karachi (Remote)",
+    period: "Aug 2026 - Present · Part-time",
+    link: "https://pphcorporation.vercel.app/",
+    highlights: [
+      {
+        icon: Globe,
+        text: "Co-developed PPH's official company website with a teammate; other projects are private and internal",
+      },
+      {
+        icon: Building2,
+        text: "Design and develop full-stack applications with the MERN stack (MongoDB, Express.js, React.js/Next.js, Node.js) and PERN stack (PostgreSQL)",
+      },
+      {
+        icon: Server,
+        text: "Build REST APIs, authentication, role-based dashboards and database schemas",
+      },
+      {
+        icon: Smartphone,
+        text: "Develop cross-platform mobile features with React Native",
+      },
+      {
+        icon: Search,
+        text: "Implement technical and on-page SEO: metadata, performance optimization, Google Search Console and Analytics setup",
+      },
+      {
+        icon: MapPin,
+        text: "Deploy and maintain applications on Vercel and cloud hosting",
+      },
+      {
+        icon: Sparkles,
+        text: "Use AI-assisted development (Claude, ChatGPT, GitHub Copilot) to speed up delivery, then review, test and refine all code before it ships",
+      },
+    ],
+  },
+  {
     role: "Full Stack & Mobile App Developer",
     company: "AppMash",
     location: "Karachi",
-    period: "9 Months",
+    period: "Oct 2025 - Jul 2026 · Frontend Intern → Full-time",
     highlights: [
       {
         icon: Smartphone,
@@ -147,6 +186,17 @@ const Experience = () => {
                   <p className="text-sm text-muted-foreground mt-1">
                     {exp.period}
                   </p>
+                  {"link" in exp && exp.link && (
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm text-primary hover:underline mt-2"
+                    >
+                      <ExternalLink size={14} />
+                      Visit company website
+                    </a>
+                  )}
                 </div>
               </div>
 

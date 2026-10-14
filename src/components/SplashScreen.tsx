@@ -57,12 +57,24 @@ const SplashScreen = () => {
           />
 
           <motion.div
-            className="relative mb-6 flex h-20 w-20 items-center justify-center rounded-2xl border border-primary/40 bg-card font-display text-3xl font-bold text-gradient shadow-[var(--shadow-glow)]"
+            className="relative mb-6 h-28 w-28 sm:h-32 sm:w-32"
             initial={{ scale: 0, rotate: -90, opacity: 0 }}
             animate={{ scale: 1, rotate: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 160, damping: 14 }}
           >
-            SMA
+            <motion.span
+              className="absolute inset-0 rounded-full border-2 border-primary"
+              initial={{ scale: 1, opacity: 0.7 }}
+              animate={{ scale: 1.45, opacity: 0 }}
+              transition={{ duration: 1.4, repeat: Infinity, ease: "easeOut" }}
+            />
+            <img
+              src="/Ali-img.jpeg"
+              alt=""
+              width={128}
+              height={128}
+              className="relative h-full w-full rounded-full border-2 border-primary/60 object-cover shadow-[var(--shadow-glow)]"
+            />
           </motion.div>
 
           <h2 className="relative flex flex-wrap justify-center gap-x-3 font-display text-[clamp(1.8rem,7vw,3.8rem)] font-bold leading-tight">

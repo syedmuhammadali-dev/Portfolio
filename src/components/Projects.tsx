@@ -103,6 +103,15 @@ const mobileProjects = [
 
 const reactProjects = [
   {
+    title: "PPH Corporation — Company Website",
+    featured: true,
+    description:
+      "Official website of ProPushHub Corporation (PPH), a custom software development company. Co-developed with a teammate as part of my Full Stack Engineer role; the company's other projects are private and internal.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "SEO"],
+    github: "",
+    live: "https://pphcorporation.vercel.app/",
+  },
+  {
     title: "Barakah — ERP Platform",
     featured: true,
     description:
